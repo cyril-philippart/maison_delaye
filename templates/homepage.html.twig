@@ -1,7 +1,39 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-
-<h1>HOMEPAGE</h1>
+<div id="card_main_img">
+    <header>
+        <a href="{{ path('homepage') }}"><img id="logoMaisonDelaye" src="\pictures\logo-maison-delaye.png" alt="logo Maison Delaye"></a>
+        <div id="hamburger">
+            <div id="hamburger-content">
+                <nav>
+                    <ul>
+                        <li><a class="link_navbar" href="{{ path('theMaisonDelaye') }}">La Maison</a></li>
+                        <li><a class="link_navbar" href="{{ path('card') }}">La carte</a></li>
+                        <li><a class="link_navbar" href="{{ path('actuality') }}">Actualités</a></li>
+                        <li><a class="link_navbar" href="{{ path('contact') }}">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button id="hamburger-button">&#9776;</button>
+            <div id="hamburger-sidebar">
+                <div id="hamburger-sidebar-header"></div>
+                <div id="hamburger-sidebar-body"></div>
+            </div>
+            <div id="hamburger-overlay"></div>
+        </div>
+    </header>
+    <div id="container_main_title">
+        <h1 id="main_title">De l'art et du cochon</h2>
+        <a id="second_title" href="{{ path('card') }}"><span>Voir la carte</span><i class="fas fa-chevron-right"></i></a>
+    </div>
+</div>
+<div id="section_skills">
+    <h1 id="skill">Savoir-faire</h1>
+    <h2 id="work">Charcutier</h2>
+</div>
+<aside id="about"> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut molestiae error eos beatae architecto. Eius vitae necessitatibus voluptates enim corporis voluptas, inventore suscipit dolores saepe. Corrupti porro doloribus facilis eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo quam expedita, perferendis ipsa obcaecati mollitia harum neque, doloribus cumque eveniet sunt iure soluta ipsum possimus nam corrupti fugiat fugit!</p>
+</aside>
 
 {% endblock %}

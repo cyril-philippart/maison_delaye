@@ -1,7 +1,27 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-
+<header>
+    <a href="{{ path('homepage') }}"><img id="logoMaisonDelaye" src="\pictures\logo-maison-delaye.png" alt="logo Maison Delaye"></a>
+    <div id="hamburger">
+        <div id="hamburger-content">
+            <nav>
+                <ul>
+                    <li><a class="link_navbar" href="{{ path('theMaisonDelaye') }}">La Maison</a></li>
+                    <li><a class="link_navbar" href="{{ path('card') }}">La carte</a></li>
+                    <li><a class="link_navbar" href="{{ path('actuality') }}">Actualités</a></li>
+                    <li><a class="link_navbar" href="{{ path('contact') }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button id="hamburger-button">&#9776;</button>
+        <div id="hamburger-sidebar">
+            <div id="hamburger-sidebar-header"></div>
+            <div id="hamburger-sidebar-body"></div>
+        </div>
+        <div id="hamburger-overlay"></div>
+    </div>
+</header>
 <h1>CONTACTEZ NOUS</h1>
 
 {% endblock %}

@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "de-bambeet";
+    src: url("/font/De-bambeet.otf");
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 5rem;
+}
+
+p {
+    color: #8a6443;
+}
+
+#logoMaisonDelaye {
+    width: 200px;
+}
+
+nav > ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav > ul >li {
+    margin-left: 3rem ;
+    font-size: 1.2rem;
+}
+
+.link_navbar {
+    text-decoration: none;
+    color: #8a6443;
+    transition: color 0.6s ease;
+    font-weight: bold;
+}
+
+.link_navbar:hover {
+    color: white;
+}
+
+#hamburger-button {
+    display: none;
+}
+#hamburger {
+    align-self: center;
+}
+
+#card_main_img {
+    background: url(/pictures/testimage.jpg) no-repeat;
+    min-height: 100vh;
+    min-width: 99vw;
+    background-size: cover;
+}
+
+#container_main_title {
+    position: absolute;
+    top: 48%;
+    left: 31%;
+    z-index: 1;
+    text-align: center;
+}
+ 
+#main_title {
+    color: #8a6443;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+#second_title {
+    font-size: 1.3rem;
+    color: #8a6443;
+}
+
+.fas {
+    margin-left: 0.5rem;
+}
+
+#section_skills {
+    text-align: center;
+    margin-top: 7rem;
+    position: relative;
+}
+
+#skill {
+    font-family:'de-bambeet';
+    font-size: 7rem;
+    color: #8a64433b;
+    letter-spacing: 0.8rem;
+    position: absolute;
+    top: -84%;
+    left: 32%;
+}
+
+#work {
+    color: #8a6443;
+    letter-spacing: 0.4rem;
+}
+
+#about {
+    margin: 5rem auto;
+    text-align: center;
+    width: 50%;
+}
