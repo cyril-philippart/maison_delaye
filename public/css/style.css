@@ -55,9 +55,8 @@ nav > ul >li {
 #container_main_title {
     position: absolute;
     top: 48%;
-    left: 31%;
-    z-index: 1;
     text-align: center;
+    width: 100%;
 }
  
 #main_title {
@@ -89,16 +88,110 @@ nav > ul >li {
     letter-spacing: 0.8rem;
     position: absolute;
     top: -84%;
-    left: 32%;
+    width: 100%;
 }
 
 #work {
     color: #8a6443;
     letter-spacing: 0.4rem;
+    text-transform: uppercase;
 }
 
 #about {
     margin: 5rem auto;
     text-align: center;
     width: 50%;
+}
+
+section {
+    width: 23%;
+    margin: auto;
+    position: relative;
+}
+
+section > ul {
+    list-style-type: none;
+}
+
+.items {
+    position: absolute;
+    height: 400px;
+    width: 281px;
+    background: #333;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+.picture_product {
+    width: 281px;
+    height: 400px;
+}
+
+.main-pos {
+  margin-left: 2em !important;
+  z-index: 2;
+}
+
+.left-pos {
+  opacity: .3;
+  margin-left: -16em !important;
+  z-index: 1;
+  transform: scale(.75);
+}
+
+.back-pos {
+    margin-left: 2em !important;
+    opacity: .05;
+    transform: scale(.5);
+}
+
+.right-pos {
+    opacity: .3;
+    margin-left: 20em !important;
+    z-index: 1;
+    transform: scale(.75);
+}
+
+#prev {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+    left: -18rem;
+    top: 11rem;
+    cursor: pointer;
+}
+
+#prev::after {
+    content: "\f053";
+    font-family: 'FontAwesome';
+    font-size: 2em;
+    line-height: 40px;
+    padding-left: 8px;
+    color: #8a6443;
+}
+
+#next {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+    left: 40rem;
+    top: 11rem;
+    cursor: pointer;
+}
+
+#next::after {
+    content: "\f054";
+    font-family: 'FontAwesome';
+    font-size: 2em;
+    line-height: 40px;
+    padding-left: 8px;
+    color: #8a6443;
+}
+
+#btn_discover {
+    margin-top: 25rem;
+    text-align: center ;
 }

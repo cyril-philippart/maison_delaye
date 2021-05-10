@@ -2,16 +2,16 @@
 
 namespace App\Entity;
 
-use App\Repository\ActualityRepository;
+use App\Repository\ProductsRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
- * @ORM\Entity(repositoryClass=ActualityRepository::class)
+ * @ORM\Entity(repositoryClass=ProductsRepository::class)
  * @Vich\Uploadable
  */
-class Actuality
+class Products
 {
     /**
      * @ORM\Id
@@ -23,20 +23,15 @@ class Actuality
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $title;
-
-    /**
-     * @ORM\Column(type="text")
-     */
-    private $description;
+    private $name;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
     private $picture;
 
-    /**
-     * @Vich\UploadableField(mapping="pictures_actuality", fileNameProperty="picture")
+        /**
+     * @Vich\UploadableField(mapping="pictures_products", fileNameProperty="picture")
      * @var File
      */
     private $pictureFile;
@@ -56,26 +51,14 @@ class Actuality
         return $this->id;
     }
 
-    public function getTitle(): ?string
+    public function getName(): ?string
     {
-        return $this->title;
+        return $this->name;
     }
 
-    public function setTitle(string $title): self
+    public function setName(string $name): self
     {
-        $this->title = $title;
-
-        return $this;
-    }
-
-    public function getDescription(): ?string
-    {
-        return $this->description;
-    }
-
-    public function setDescription(string $description): self
-    {
-        $this->description = $description;
+        $this->name = $name;
 
         return $this;
     }
