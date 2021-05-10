@@ -75,6 +75,46 @@ nav > ul >li {
     margin-left: 0.5rem;
 }
 
+.container_vertical {
+    position: absolute;
+    top: 196%;
+    display: flex;
+    justify-content: center;
+    transform-origin: 0% 0%;
+    transform: rotate(90deg);
+    left: 9%;
+}
+
+.separator_vertical_1 {
+    content: '';
+    width: 30%;
+    height: 4px;
+    background: #c0c8da;
+    position: absolute;
+    left: -10%;
+    top: 140%;
+    transform: rotate(90deg);
+}
+
+#logo_grey {
+    width: 4%;
+    float: left;
+    position: absolute;
+    top: 174%;
+    left: 3%;
+}
+
+.separator_vertical_2 {
+    content: '';
+    width: 9%;
+    height: 4px;
+    background: #c0c8da;
+    position: absolute;
+    left: 0.5%;
+    top: 199%;
+    transform: rotate(90deg);
+}
+
 #section_skills {
     text-align: center;
     margin-top: 7rem;
@@ -103,10 +143,17 @@ nav > ul >li {
     width: 50%;
 }
 
+.separator {
+    border-bottom: 2px solid #8a6443;
+    width: 7%;
+    margin: auto;
+}
+
 section {
-    width: 23%;
+    width: 22%;
     margin: auto;
     position: relative;
+    margin-top: 4rem;
 }
 
 section > ul {
@@ -192,6 +239,157 @@ section > ul {
 }
 
 #btn_discover {
-    margin-top: 25rem;
+    margin-top: 26rem;
     text-align: center ;
 }
+
+.btn {
+    border: solid #022168;
+    color: #022168;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #ebebeb;
+    border: solid #022168;
+    color: #022168;
+}
+
+#distinction_medal {
+    height: 600px;
+    background-image: url(/pictures/bandeau_bleu.JPG);
+    margin-top: 8rem;
+    margin-bottom: 9rem;
+}
+
+#title_medal > p{
+    width: 32%;
+    margin-top: 5rem;
+    margin-left: 18rem;
+    text-align: justify;
+}
+
+.main_title {
+    font-family:'de-bambeet';
+    font-size: 7rem;
+    color: #8a64433b;
+    letter-spacing: 0.8rem;
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 15rem;
+}
+
+.second_title {
+    color: #8a6443;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase; 
+    padding-top: 6rem;
+    padding-left: 21rem;
+    font-size: 1.3rem;
+}
+
+#picture_melissa_delaye {
+    width: 50%;
+    margin-left: 23rem;
+}
+
+#jk1 {
+    margin-left: 10rem;
+}
+ 
+#jk2 {
+    padding-left: 15rem;
+}
+
+#container_text_actuality > p{
+    width: 46%;
+    margin-top: 7rem;
+    margin-left: 10rem;
+    margin-bottom: 3rem;
+    text-align: justify;
+}
+
+.separator_actuality {
+    border-bottom: 2px solid #8a6443;
+    width: 7%;
+    margin-left: 22rem;
+}
+
+#btn_actuality {
+    color: #8a6443 ;
+    border-color: #8a6443;
+    margin-top: 5rem;
+    margin-left: 20.3rem;
+}
+
+#row_actuality {
+    margin-top: 10rem;
+}
+
+#picture_menu {
+    width: 50%;
+    margin-left: 9rem;
+}
+
+#jk3 {
+    margin-top: 4rem;
+    margin-left: 24.5rem;
+}
+
+#jk4 {
+    padding-top: 7rem;
+    padding-left: 30rem;
+}
+
+#container_text_menu > p{
+    width: 50%;
+    margin-top: 8rem;
+    margin-left: 23rem;
+    margin-bottom: 3rem;
+    text-align: justify;
+}
+
+.separator_menu {
+    border-bottom: 2px solid #8a6443;
+    width: 7%;
+    margin-left: 35rem;
+}
+
+#btn_menu {
+    color: #8a6443 ;
+    border-color: #8a6443;
+    margin-top: 5rem;
+    margin-left: 33.3rem;
+}
+
+.second_separator_vertical_1 {
+    content: '';
+    width: 26%;
+    height: 4px;
+    background: #c0c8da;
+    position: absolute;
+    left: 81%;
+    top: 323%;
+    transform: rotate(90deg);
+}
+
+#logo_grey_2 {
+    width: 4%;
+    float: left;
+    position: absolute;
+    top: 356%;
+    left: 92%;
+}
+
+.second_separator_vertical_2 {
+    content: '';
+    width: 48%;
+    height: 4px;
+    background: #c0c8da;
+    position: absolute;
+    left: 70%;
+    top: 423%;
+    transform: rotate(90deg);
+}
+
