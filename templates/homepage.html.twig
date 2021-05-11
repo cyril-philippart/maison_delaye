@@ -4,7 +4,7 @@
 <div id="card_main_img">
     <header>
         <a href="{{ path('homepage') }}"><img id="logoMaisonDelaye" src="\pictures\logo-maison-delaye.png" alt="logo Maison Delaye"></a>
-        <div id="hamburger">
+        <div id="hamburger_overlay">
             <div id="hamburger-content">
                 <nav>
                     <ul>
@@ -15,12 +15,23 @@
                     </ul>
                 </nav>
             </div>
-            <button id="hamburger-button">&#9776;</button>
-            <div id="hamburger-sidebar">
-                <div id="hamburger-sidebar-header"></div>
-                <div id="hamburger-sidebar-body"></div>
+            <input type="checkbox" onchange="changeIndexToggle(this)" class="toggler">
+            <div class="hamburger">
+                <div></div>
             </div>
-            <div id="hamburger-overlay"></div>
+            <div id="hamburger_menu_activated">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a class="link_navbar" href="{{ path('theMaisonDelaye') }}">La Maison</a></li>
+                            <li><a class="link_navbar" href="{{ path('card') }}">La carte</a></li>
+                            <li><a class="link_navbar" href="{{ path('actuality') }}">Actualités</a></li>
+                            <li><a class="link_navbar" href="{{ path('contact') }}">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="hamburger_overlay_menu"></div>
         </div>
     </header>
     <div id="container_main_title">
@@ -69,7 +80,7 @@
     </span>
 </section>
 <div id="btn_discover">
-    <button type="button" class="btn btn-light">Decouvrir</button>
+    <a href="{{ path('theMaisonDelaye') }}"><button type="button" class="btn btn-light">Decouvrir</button></a>
 </div>
 <div class="row" id="distinction_medal">
     <div class="col-md-6" id="title_medal">
@@ -93,7 +104,7 @@
         <h2 id="jk2" class="second_title">La maison delaye</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod quidem tempora sed, assumenda, deleniti inventore saepe quisquam dolore architecto delectus quae hic ipsam culpa consequuntur enim doloremque ducimus nisi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus et, quibusdam provident delectus, rem temporibus quam ullam vitae repellendus eum aliquam sed id ad fugiat perferendis ipsa! Eveniet, quasi aut.</p>
         <div class="separator_actuality"></div>
-        <button id="btn_actuality" type="button" class="btn btn-light">Decouvrir</button>
+        <a href="{{ path('actuality') }}"><button id="btn_actuality" type="button" class="btn btn-light">Decouvrir</button></a>
     </div>
 </div>
 <div id="row_actuality" class="row">
@@ -102,11 +113,38 @@
         <h2 id="jk4" class="second_title">La maison delaye</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod quidem tempora sed, assumenda, deleniti inventore saepe quisquam dolore architecto delectus quae hic ipsam culpa consequuntur enim doloremque ducimus nisi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus et, quibusdam provident delectus, rem temporibus quam ullam vitae repellendus eum aliquam sed id ad fugiat perferendis ipsa! Eveniet, quasi aut.</p>
         <div class="separator_menu"></div>
-        <button id="btn_menu" type="button" class="btn btn-light">Decouvrir</button>
+        <a href="{{ path('card') }}"><button id="btn_menu" type="button" class="btn btn-light">Decouvrir</button></a>
     </div>
     <div id="container_picture_menu" class="col-md-6">
         <img id="picture_menu" src="\pictures\photo_menu.jpg" alt="">
     </div>
+</div>
+<div>
+    <div id="container_contact">
+        <div id="container_contact_opacity">
+            <div id="title_contact">
+                <h1 id="jk5"class="main_title">La boutique</h1>
+                <h2 id="jk6"class="second_title">Sceaux</h2>
+            </div>
+            <div id="container_text_contact">
+                <div class="text_contact">
+                    <h3>Horaires</h3>
+                    <p>DU mardi au samedi de 8h à 19h</p>
+                    <p>le dimanche de 8h à 13h</p>
+                </div>
+                <div class="text_contact">
+                    <h3>Nous trouver</h3>
+                    <p>41 rue Houdan, 92230 Sceaux</p>
+                </div>
+                <div class="text_contact">
+                    <h3>Nous contacter</h3>
+                    <p>01 46 61 01 71</p>
+                    <p>contact@maisondelaye.com</p>
+                </div>
+            </div>
+        </div>
+     </div>
+     <div id="separator_vertical_contact"></div>
 </div>
 
 {% endblock %}

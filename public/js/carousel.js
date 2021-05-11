@@ -91,3 +91,12 @@ $('li').click(function() {
     swap('clockwise'); 
   }
 });
+
+function changeIndexToggle(checkboxElem) 
+{
+	if (checkboxElem.checked) 
+	{
+		changeIndex = document.querySelector('#hamburger_overlay #hamburger_menu_activated')
+		changeIndex.style.zIndex = "1"
+	}
+}
