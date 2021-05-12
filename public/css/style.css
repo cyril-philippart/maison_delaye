@@ -8,6 +8,18 @@
     --menu-speed: 1s;
 }
 
+/*********************************************************************************************************/
+/*                                                                                                       */
+/*                                              HOMEPAGE                                                 */
+/*                                                                                                       */
+/*********************************************************************************************************/
+
+/***************/
+/*             */
+/*   header    */
+/*             */
+/***************/
+
 header {
     display: flex;
     justify-content: space-between;
@@ -47,6 +59,12 @@ nav > ul >li {
     color: white;
 }
 
+/************************/
+/*                      */
+/* Menu / menu burger   */
+/*                      */
+/************************/
+
 #hamburger_overlay {
     align-self: center;
 }
@@ -54,12 +72,12 @@ nav > ul >li {
 #hamburger_overlay .toggler {
     position: absolute;
     margin: 3.7rem 3.5rem;
-    top: 3%;
-    left: 82%;
+    top: 2%;
+    left: 81.8%;
     z-index: 1000;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     opacity: 0;
     display: none;
 }
@@ -140,7 +158,7 @@ nav > ul >li {
     display: flex;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
 } 
 
 #hamburger_overlay #hamburger_menu_activated > div {
@@ -176,11 +194,15 @@ nav > ul >li {
     color : #8a64437c;
 }
 
+/**********************/
+/*                    */
+/*    Grande image    */
+/*                    */
+/**********************/
 
 #card_main_img {
     background: url(/pictures/testimage.jpg) no-repeat;
     min-height: 100vh;
-    min-width: 99vw;
     background-size: cover;
 }
 
@@ -206,6 +228,12 @@ nav > ul >li {
 .fas {
     margin-left: 0.5rem;
 }
+
+/*************************/
+/*                       */
+/*    Ligne verticale    */
+/*                       */
+/*************************/
 
 .container_vertical {
     position: absolute;
@@ -247,6 +275,12 @@ nav > ul >li {
     transform: rotate(90deg);
 }
 
+/******************************/
+/*                            */
+/*    Section savoir-faire    */
+/*                            */
+/******************************/
+
 #section_skills {
     text-align: center;
     margin-top: 7rem;
@@ -259,7 +293,7 @@ nav > ul >li {
     color: #8a64433b;
     letter-spacing: 0.8rem;
     position: absolute;
-    top: -84%;
+    top: -105%;
     width: 100%;
 }
 
@@ -280,6 +314,12 @@ nav > ul >li {
     width: 7%;
     margin: auto;
 }
+
+/*********************************/
+/*                               */
+/*    carousel images produits   */
+/*                               */
+/*********************************/
 
 section {
     width: 22%;
@@ -388,17 +428,26 @@ section > ul {
     color: #022168;
 }
 
+/***************************/
+/*                         */
+/*    section medaille     */
+/*                         */
+/***************************/
+
 #distinction_medal {
     height: 600px;
-    background-image: url(/pictures/bandeau_bleu.JPG);
+    background-color: #022168;
     margin-top: 8rem;
     margin-bottom: 9rem;
 }
 
-#title_medal > p{
-    width: 32%;
-    margin-top: 5rem;
-    margin-left: 18rem;
+#title_medal {
+    text-align: center;
+}
+
+#container_medal > p{
+    width: 50%;
+    margin: 6rem auto;
     text-align: justify;
 }
 
@@ -409,7 +458,7 @@ section > ul {
     letter-spacing: 0.8rem;
     position: absolute;
     margin-top: 3rem;
-    margin-left: 15rem;
+    width: 50%;
 }
 
 .second_title {
@@ -417,9 +466,72 @@ section > ul {
     letter-spacing: 0.3rem;
     text-transform: uppercase; 
     padding-top: 6rem;
-    padding-left: 21rem;
     font-size: 1.3rem;
 }
+
+/***********************/
+/*                     */
+/* carousel medaille   */
+/*                     */
+/***********************/
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+.slider {
+	/* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); */
+	height: 600px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 960px;
+    padding: 5rem;
+}
+
+.slide > img {
+    height: 400px;
+    width: 200px;
+}
+
+.slider::before,
+.slider::after {
+	background: linear-gradient(to right,  rgba(2,33,104,1) 0%,rgba(2,33,104,0) 100%);
+	content: "";
+	height: 400px;
+	position: absolute;
+	width: 200px;
+	z-index: 2;
+    margin-top: 5rem;
+}
+
+.slider::after {
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
+}
+.slider::before {
+	left: 0;
+	top: 0;
+}
+
+.slide-track {
+	animation: scroll 40s linear infinite;
+	display: flex;
+	width: calc(250px * 14);
+}
+
+.slide {
+	height: 100px;
+	width: 250px;
+}
+
+/***********************/
+/*                     */
+/*    section actus    */
+/*                     */
+/***********************/
 
 #picture_melissa_delaye {
     width: 50%;
@@ -435,10 +547,8 @@ section > ul {
 }
 
 #container_text_actuality > p{
-    width: 46%;
-    margin-top: 7rem;
-    margin-left: 10rem;
-    margin-bottom: 3rem;
+    width: 55%;
+    margin: 5rem 8em;
     text-align: justify;
 }
 
@@ -459,6 +569,12 @@ section > ul {
     margin-top: 10rem;
 }
 
+/***********************/
+/*                     */
+/*    section carte    */
+/*                     */
+/***********************/
+
 #picture_menu {
     width: 50%;
     margin-left: 9rem;
@@ -466,19 +582,17 @@ section > ul {
 
 #jk3 {
     margin-top: 4rem;
-    margin-left: 24.5rem;
+    margin-left: 23rem;
 }
 
 #jk4 {
     padding-top: 7rem;
-    padding-left: 30rem;
+    padding-left: 33rem;
 }
 
 #container_text_menu > p{
     width: 50%;
-    margin-top: 8rem;
-    margin-left: 23rem;
-    margin-bottom: 3rem;
+    margin: 5rem 22em;
     text-align: justify;
 }
 
@@ -494,6 +608,12 @@ section > ul {
     margin-top: 5rem;
     margin-left: 33.3rem;
 }
+
+/*************************/
+/*                       */
+/*    Ligne verticale    */
+/*                       */
+/*************************/
 
 .second_separator_vertical_1 {
     content: '';
@@ -524,6 +644,12 @@ section > ul {
     top: 423%;
     transform: rotate(90deg);
 }
+
+/*************************/
+/*                       */
+/*    section contact    */
+/*                       */
+/*************************/
 
 #container_contact {
     height: 800px;
@@ -584,6 +710,12 @@ section > ul {
     transform: rotate(90deg);
 }
 
+/****************/
+/*              */
+/*    footer    */
+/*              */
+/****************/
+
 footer {
     height: 330px;
     background-color: black;
@@ -597,8 +729,6 @@ footer {
 }
 
 #icons_social_media {
-    width: 5%;
-    color: #8a6443;
     margin: 1rem auto ;
 
 }
@@ -636,6 +766,12 @@ footer {
     color: #8a64437c ;
 }
 
+/*****************************/
+/*                           */
+/*    Responsive tablette    */
+/*                           */
+/*****************************/
+
 @media screen and (max-width : 768px) {
     #hamburger_overlay .toggler,
     #hamburger_overlay .hamburger {
@@ -651,7 +787,8 @@ footer {
     .second_separator_vertical_1,
     .second_separator_vertical_2,
     #logo_grey,
-    #logo_grey_2
+    #logo_grey_2,
+    #separator_vertical_contact
      {
         display: none;
     }
@@ -673,21 +810,45 @@ footer {
         left: 24rem;
     }
 
-    #title_medal,
-    #container_text_menu {
-        width: 100%;
-    }
-
     .main_title {
         margin-left: 11rem;
     }
 
-    .second_title {
-        padding-left: 18rem;
-    }
-
     #title_medal > p {
         margin-left:  16rem;
+    }
+
+    #container_medal > p {
+        margin: 4rem auto 0rem;
+    }
+
+    .slider {
+        padding: 4rem;
+        height: 425px;
+        width: 100%;
+    }
+
+    .slide > img {
+        height: 300px;
+        width: 150px;
+    }
+
+    .slider::before { 
+        margin-top: 0;
+    }
+
+    .slider::after {
+        margin-top: 0;
+        right: -1%;
+    }
+
+    .slide-track {
+        width: calc(185px * 14);
+    }
+
+    #distinction_medal {
+        height: 830px;
+        margin-bottom: 7rem;
     }
 
     #container_picture,
@@ -696,17 +857,24 @@ footer {
         text-align: center;
     }
 
+    #container_text_actuality > p {
+        margin: 5rem 11em;
+    }
+
     #container_picture > img,
     #container_picture_menu > img {
         margin: 0 ;
     }
 
-    #jk2 {
-        padding-left: 0;
+    #jk1 {
+        margin-left: 12rem;
+        font-size: 5rem;
     }
 
-    #container_text_actuality > p {
-        width: 57%;
+    #jk2 {
+        padding-left: 0;
+        font-size: 1.2rem;
+        padding-top: 5rem;
     }
 
     #btn_actuality {
@@ -719,17 +887,30 @@ footer {
         text-align:center
     }
 
+    #title_card {
+        text-align: center;
+    }
+
     #jk3 {
-        margin-left: 10.5rem;
+        margin-left: 12rem;
+        font-size: 5rem;;
     }
 
     #jk4 {
-        padding-left: 16rem;
+        padding-left: 0rem;
+        padding-top: 6rem;
     }
 
     #container_text_menu > p {
         width: 57%;
         margin-left: 10rem;
+    }
+
+    #jk5 {
+        margin-top: 7rem;
+        margin-left: 0rem;
+        width: 100%;
+        font-size: 5rem;
     }
 
     .separator_menu {
@@ -740,24 +921,335 @@ footer {
         margin-left: 20rem;
     }
 
-    #separator_vertical_contact {
-        left: 44.5%;
-        top: 618.5%;
-        width: 11%;
+    #main_containter_footer > img {
+        width: 20%;
+    }
+
+    #fab {
+        margin-left: 1.6rem;
+        margin-right: 1.3rem;
+    }
+
+    footer {
+        height: 323px;
+    }
+    
+}
+
+@media (min-width : 769px) and (max-width : 1024px) {
+    #hamburger_overlay .toggler,
+    #hamburger_overlay .hamburger {
+        display: inline;
+    }
+
+    #hamburger-content {
+        display: none;
+    }
+
+    .separator_vertical_1,
+    .separator_vertical_2,
+    .second_separator_vertical_1,
+    .second_separator_vertical_2,
+    #logo_grey,
+    #logo_grey_2,
+    #separator_vertical_contact
+     {
+        display: none;
+    }
+
+    #skill {
+       top: -94%;
+    }
+
+    .main-pos,
+    .back-pos {
+        margin-left: -4rem;
+    }
+
+    .right-pos {
+        margin-left: 15rem;
+    }
+
+    .left-pos {
+        margin-left: -23em;
+    }
+
+    #next {
+        left: 32rem;
+    }
+
+    #prev {
+        left: -22rem;
+    }
+
+    .main_title {
+        font-size: 6rem;
+    }
+
+    .second_title {
+        padding-top: 5rem;
+    }
+
+    #title_medal > p {
+        margin-left:  16rem;
+    }
+
+    .slider {
+        padding: 4rem;
+        height: 600px;
+        width: 100%;
+    }
+
+    .slide > img {
+        height: 300px;
+        width: 150px;
+    }
+
+    .slider::before { 
+        margin-top: 4rem;
+    }
+
+    .slider::after {
+        margin-top: 4rem;
+        right: -1%;
+    }
+
+    .slide-track {
+        width: calc(185px * 14);
+        margin-top: 5.5rem;
+    }
+
+    #container_picture,
+    #container_text_actuality,
+    #container_text_menu {
+        text-align: center;
+    }
+
+    #picture_melissa_delaye,
+    #picture_menu {
+        width: 80%;
+    }
+
+    #container_picture > img,
+    #container_picture_menu > img {
+        margin: 0 ;
+    }
+
+    #jk1 {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    #jk2 {
+        padding-left: 0;
+        padding-top: 3.5rem;
+    }
+
+    #container_text_actuality > p,
+    #container_text_menu > p {
+        width: 85%;
+        margin: 4rem auto;
+    }
+
+    .separator_actuality,
+    .separator_menu {
+        margin: auto;
+    }
+
+    #btn_actuality,
+    #btn_menu {
+        margin-left: 0;
+    }
+
+    #container_picture_menu {
+        text-align : center;
+    }
+
+    #jk3 {
+        margin: 0;
+    }
+
+    #jk4 {
+        padding-top: 2.5rem;
+        padding-left: 0;
+    }
+
+    #jk5 {
+        margin-top: 7rem;
+        margin-left: 0rem;
+        width: 100%;
+        font-size: 5rem;
     }
 
     #main_containter_footer > img {
         width: 20%;
     }
 
-    #icons_social_media {
-        display: flex;
-        width: 15%;
-    }
-
     #fab {
         margin-left: 1.5rem;
         margin-right: 1.4rem;
     }
+
+    footer {
+        height: 283px;
+    }
+    
 }
 
+/******************************/
+/*                            */
+/*    Responsive téléphone    */
+/*                            */
+/******************************/
+
+@media screen and (max-width : 576px) {
+    header {
+        padding: 1.5rem 1rem;
+        text-align: right;
+    }
+
+    #logoMaisonDelaye {
+        width: 40%;
+    }
+
+    #hamburger_overlay .hamburger {
+        top: 2%;
+        left: -6%;
+        width: 65px;
+        height: 50px;
+    }
+
+    #hamburger_overlay .hamburger >div::before, 
+    #hamburger_overlay .hamburger >div::after {
+        height: 2px;
+    }
+
+    #skill {
+        font-size: 5rem;
+        letter-spacing: 0.3rem;
+    }
+
+    #work {
+        letter-spacing: 0.2rem;
+    }
+    
+    #about {
+        width: 90%;
+        text-align: justify;
+    }
+
+    .separator {
+        width: 40%;
+    }
+
+    section {
+        width: 30%;
+        margin-top: 6rem;
+    }
+
+    .items {
+        height: 400px;
+        width: 230px;
+    }
+
+    .right-pos {
+        margin-left: -2em;
+    }
+
+    .left-pos {
+        margin-left: -9em;
+    }
+
+    #prev {
+        left: -8rem;
+    }
+
+    #next {
+        left: 11rem;
+    }
+
+    #distinction_medal {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .slider {
+        padding: 0rem;
+    }
+
+    #container_medal > p {
+        margin: 4rem auto 3rem;
+    }
+
+    .slider::before, .slider::after {
+        height: 310px;
+        width: 150px;
+    }
+
+    .main_title,
+    #jk1,
+    #jk3 {
+        font-size: 5rem;
+        letter-spacing: 0.3rem;
+        width: 98%;
+        margin-left: 0;
+    }
+
+    .second_title,
+    #jk2,
+    #jk4 {
+        letter-spacing: 0.2rem;
+        padding-top: 5rem;
+        font-size: 1.3rem;
+    }
+
+    #jk4 {
+        padding-top: 6rem;
+    }
+
+    #container_medal > p,
+    #container_text_actuality > p,
+    #container_text_menu > p {
+        width: 90%;
+        margin: 4rem auto;
+    }
+
+    #picture_melissa_delaye,
+    #picture_menu {
+        width: 85%;
+    }
+    
+    .separator_actuality,
+    .separator_menu {
+        width: 40%;
+        margin: auto;
+    }
+
+    #btn_actuality,
+    #btn_menu {
+        margin-top: 3rem;
+        margin-left:0 ;
+    }
+
+    #row_actuality {
+        margin-top: 6rem;
+        text-align: center;
+    }
+
+    footer {
+        height: 243px;
+    }
+
+    #main_containter_footer > img {
+        width: 35%;
+    }
+
+    #fab {
+        margin-left: 0.6rem;
+        margin-right: 0.3rem;
+    }
+
+    #legal_mention {
+        margin-top: 2rem;
+    }
+}
