@@ -99,4 +99,11 @@ function changeIndexToggle(checkboxElem)
 		changeIndex = document.querySelector('#hamburger_overlay #hamburger_menu_activated')
 		changeIndex.style.zIndex = "1"
 	}
+  else 
+	{
+		changeIndex = document.querySelector('#hamburger_overlay #hamburger_menu_activated')
+		changeIndex.style.transition = 'all 1.6s ease';
+    changeIndex.style.zIndex = '-1';
+    
+	}
 }

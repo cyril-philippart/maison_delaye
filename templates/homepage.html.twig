@@ -3,7 +3,7 @@
 {% block body %}
 <div id="card_main_img">
     <header>
-        <a href="{{ path('homepage') }}"><img id="logoMaisonDelaye" src="\pictures\logo-maison-delaye.png" alt="logo Maison Delaye"></a>
+        <a id="link_home" href="{{ path('homepage') }}"><img id="logoMaisonDelaye" class="img-fluid" src="\pictures\logo-maison-delaye.png" alt="logo Maison Delaye"></a>
         <div id="hamburger_overlay">
             <div id="hamburger-content">
                 <nav>
@@ -83,40 +83,91 @@
     <a href="{{ path('theMaisonDelaye') }}"><button type="button" class="btn btn-light">Decouvrir</button></a>
 </div>
 <div class="row" id="distinction_medal">
-    <div class="col-md-6" id="title_medal">
-        <h1 class="main_title">Médailles</h1>
-        <h2 class="second_title">Les palmarés</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit, perferendis sequi est aliquid illum reiciendis! Distinctio consectetur, voluptates repellat illo soluta optio officia corrupti repudiandae modi! Eveniet, ad provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti enim quaerat consectetur eligendi mollitia itaque. Cupiditate, tenetur official. </p>
+    <div class="col-lg-6" id="container_medal">
+        <div id="title_medal">
+            <h1 class="main_title">Médailles</h1>
+            <h2 class="second_title">Les palmarés</h2>
+        </div>
+        <p>adipisicing elit. Ad sit, perferendis sequi est aliquid illum reiciendis! Distinctio consectetur, voluptates repellat illo soluta optio officia corrupti repudiandae modi! Eveniet, ad provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti enim quaerat consectetur eligendi mollitia itaque. Cupiditate, tenetur official. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quas iusto accusantium quod? Laudantium.</p>
     </div>
-    <div class="col-md-6">
-
+    <div class="col-lg-6">
+        <div class="slider">
+	        <div class="slide-track">
+                <div class="slide">
+                    <img src="\pictures\medaille.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="\pictures\medaille.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="\pictures\medaille.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="\pictures\medaille.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="\pictures\medaille.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="\pictures\medaille.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="\pictures\medaille.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="\pictures\medaille.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="\pictures\medaille.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="\pictures\medaille.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="\pictures\medaille.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="\pictures\medaille.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="\pictures\medaille.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="\pictures\medaille.jpg"/>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div class="second_separator_vertical_1"></div>
 <img id="logo_grey_2" src="\pictures\logo_gris.svg" alt="">
 <div class="second_separator_vertical_2"></div>
 <div class="row">
-    <div id="container_picture" class="col-md-6">
-        <img id="picture_melissa_delaye" src="\pictures\photo_melissa.jpg" alt="">
+    <div id="container_picture" class="col-lg-6">
+        <img id="picture_melissa_delaye" class="img-fluid" src="\pictures\photo_melissa.jpg" alt="">
     </div>
-    <div id="container_text_actuality" class="col-md-6">
-        <h1 id="jk1" class="main_title">Les actus</h1>
-        <h2 id="jk2" class="second_title">La maison delaye</h2>
+    <div id="container_text_actuality" class="col-lg-6">
+        <div id="title_actuality">
+            <h1 id="jk1" class="main_title">Les actus</h1>
+            <h2 id="jk2" class="second_title">La maison delaye</h2>
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod quidem tempora sed, assumenda, deleniti inventore saepe quisquam dolore architecto delectus quae hic ipsam culpa consequuntur enim doloremque ducimus nisi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus et, quibusdam provident delectus, rem temporibus quam ullam vitae repellendus eum aliquam sed id ad fugiat perferendis ipsa! Eveniet, quasi aut.</p>
         <div class="separator_actuality"></div>
         <a href="{{ path('actuality') }}"><button id="btn_actuality" type="button" class="btn btn-light">Decouvrir</button></a>
     </div>
 </div>
 <div id="row_actuality" class="row">
-    <div id="container_text_menu" class="col-md-6">
-        <h1 id="jk3" class="main_title">Les actus</h1>
-        <h2 id="jk4" class="second_title">La maison delaye</h2>
+    <div id="container_text_menu" class="col-lg-6">
+        <div id="title_card">
+            <h1 id="jk3" class="main_title">De saison</h1>
+            <h2 id="jk4" class="second_title">La carte</h2>
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod quidem tempora sed, assumenda, deleniti inventore saepe quisquam dolore architecto delectus quae hic ipsam culpa consequuntur enim doloremque ducimus nisi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus et, quibusdam provident delectus, rem temporibus quam ullam vitae repellendus eum aliquam sed id ad fugiat perferendis ipsa! Eveniet, quasi aut.</p>
         <div class="separator_menu"></div>
         <a href="{{ path('card') }}"><button id="btn_menu" type="button" class="btn btn-light">Decouvrir</button></a>
     </div>
-    <div id="container_picture_menu" class="col-md-6">
-        <img id="picture_menu" src="\pictures\photo_menu.jpg" alt="">
+    <div id="container_picture_menu" class="col-lg-6">
+        <img id="picture_menu" class="img-fluid" src="\pictures\photo_menu.jpg" alt="">
     </div>
 </div>
 <div>
