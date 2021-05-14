@@ -1,0 +1,32 @@
+<header>
+    <a id="link_home" href="{{ path('homepage') }}"><img id="logoMaisonDelaye" class="img-fluid" src="\pictures\logo-maison-delaye.png" alt="logo Maison Delaye"></a>
+    <div id="hamburger_overlay">
+        <div id="hamburger-content">
+            <nav>
+                <ul>
+                    <li><a class="link_navbar" href="{{ path('theMaisonDelaye') }}">La Maison</a></li>
+                    <li><a class="link_navbar" href="{{ path('card') }}">La carte</a></li>
+                    <li><a class="link_navbar" href="{{ path('actuality') }}">Actualités</a></li>
+                    <li><a class="link_navbar" href="{{ path('contact') }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <input type="checkbox" onchange="changeIndexToggle(this)" class="toggler">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div id="hamburger_menu_activated">
+            <div>
+                <div>
+                    <ul>
+                        <li><a class="link_navbar" href="{{ path('theMaisonDelaye') }}">La Maison</a></li>
+                        <li><a class="link_navbar" href="{{ path('card') }}">La carte</a></li>
+                        <li><a class="link_navbar" href="{{ path('actuality') }}">Actualités</a></li>
+                        <li><a class="link_navbar" href="{{ path('contact') }}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="hamburger_overlay_menu"></div>
+    </div>
+</header>

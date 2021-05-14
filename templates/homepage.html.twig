@@ -1,86 +1,58 @@
-{% extends 'base.html.twig' %}
+{% extends 'layout/base.html.twig' %}
 
 {% block body %}
 <div id="card_main_img">
-    <header>
-        <a id="link_home" href="{{ path('homepage') }}"><img id="logoMaisonDelaye" class="img-fluid" src="\pictures\logo-maison-delaye.png" alt="logo Maison Delaye"></a>
-        <div id="hamburger_overlay">
-            <div id="hamburger-content">
-                <nav>
-                    <ul>
-                        <li><a class="link_navbar" href="{{ path('theMaisonDelaye') }}">La Maison</a></li>
-                        <li><a class="link_navbar" href="{{ path('card') }}">La carte</a></li>
-                        <li><a class="link_navbar" href="{{ path('actuality') }}">Actualités</a></li>
-                        <li><a class="link_navbar" href="{{ path('contact') }}">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <input type="checkbox" onchange="changeIndexToggle(this)" class="toggler">
-            <div class="hamburger">
-                <div></div>
-            </div>
-            <div id="hamburger_menu_activated">
-                <div>
-                    <div>
-                        <ul>
-                            <li><a class="link_navbar" href="{{ path('theMaisonDelaye') }}">La Maison</a></li>
-                            <li><a class="link_navbar" href="{{ path('card') }}">La carte</a></li>
-                            <li><a class="link_navbar" href="{{ path('actuality') }}">Actualités</a></li>
-                            <li><a class="link_navbar" href="{{ path('contact') }}">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="hamburger_overlay_menu"></div>
-        </div>
-    </header>
+   {% include "layout/navBar.html.twig" %}
     <div id="container_main_title">
         <h1 id="main_title">De l'art et du cochon</h2>
         <a id="second_title" href="{{ path('card') }}"><span>Voir la carte</span><i class="fas fa-chevron-right"></i></a>
     </div>
 </div>
-<div class="separator_vertical_1"></div>
-<img id="logo_grey" src="\pictures\logo_gris.svg" alt="">
-<div class="separator_vertical_2"></div>
-<div id="section_skills">
-    <h1 data-aos="fade-right" data-aos-duration="1200" id="skill">Savoir-faire</h1>
-    <h2 id="work">Charcutier</h2>
+<div id="container_skills" >
+<div class="vertical_item">
+    <div class="separator_vertical"></div>
+    <img id="logo_grey" src="\pictures\logo_gris.jpg" alt="">
 </div>
-<aside id="about"> 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut molestiae error eos beatae architecto. Eius vitae necessitatibus voluptates enim corporis voluptas, inventore suscipit dolores saepe. Corrupti porro doloribus facilis eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo quam expedita, perferendis ipsa obcaecati mollitia harum neque, doloribus cumque eveniet sunt iure soluta ipsum possimus nam corrupti fugiat fugit!</p>
-</aside>
-<div class="separator"></div>
-<section>
-    <ul class="carousel">
-        <li class="items main-pos" id="1">
-            <img class="picture_product" src="\uploads\pictures_products\1.jpg" />
-        </li>
-        <li class="items right-pos" id="2">
-            <img class="picture_product"src="\uploads\pictures_products\2.jpg" />
-        </li>
-        <li class="items back-pos" id="3">
-            <img class="picture_product"src="\uploads\pictures_products\3.jpg"/>
-        </li>
-        <li class="items back-pos" id="4">
-            <img class="picture_product"src="\uploads\pictures_products\4.jpg" >
-        </li>
-        <li class="items back-pos" id="5">
-            <img class="picture_product" src="\uploads\pictures_products\5.jpg" />
-        </li>
-        <li class="items back-pos" id="6">
-            <img class="picture_product" src="\uploads\pictures_products\6.jpg" />
-        </li>
-        <li class="items left-pos" id="7">
-            <img class="picture_product" src="\uploads\pictures_products\7.jpg" />
-        </li>
-    </ul>
-    <span>
-        <a id="prev"></a>
-        <a id="next"></a>
-    </span>
-</section>
-<div id="btn_discover">
-    <a href="{{ path('theMaisonDelaye') }}"><button type="button" class="btn btn-light">Decouvrir</button></a>
+    <div id="section_skills">
+        <h1 data-aos="fade-right" data-aos-duration="1200" id="skill">Savoir-faire</h1>
+        <h2 id="work">Charcutier</h2>
+    </div>
+    <aside id="about">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut molestiae error eos beatae architecto. Eius vitae necessitatibus voluptates enim corporis voluptas, inventore suscipit dolores saepe. Corrupti porro doloribus facilis eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo quam expedita, perferendis ipsa obcaecati mollitia harum neque, doloribus cumque eveniet sunt iure soluta ipsum possimus nam corrupti fugiat fugit!</p>
+    </aside>
+    <div class="separator"></div>
+    <section>
+        <ul class="carousel">
+            <li class="items main-pos" id="1">
+                <img class="picture_product" src="\uploads\pictures_products\1.jpg" />
+            </li>
+            <li class="items right-pos" id="2">
+                <img class="picture_product"src="\uploads\pictures_products\2.jpg" />
+            </li>
+            <li class="items back-pos" id="3">
+                <img class="picture_product"src="\uploads\pictures_products\3.jpg"/>
+            </li>
+            <li class="items back-pos" id="4">
+                <img class="picture_product"src="\uploads\pictures_products\4.jpg" >
+            </li>
+            <li class="items back-pos" id="5">
+                <img class="picture_product" src="\uploads\pictures_products\5.jpg" />
+            </li>
+            <li class="items back-pos" id="6">
+                <img class="picture_product" src="\uploads\pictures_products\6.jpg" />
+            </li>
+            <li class="items left-pos" id="7">
+                <img class="picture_product" src="\uploads\pictures_products\7.jpg" />
+            </li>
+        </ul>
+        <span>
+            <a id="prev"></a>
+            <a id="next"></a>
+        </span>
+    </section>
+    <div id="btn_discover">
+        <a href="{{ path('theMaisonDelaye') }}"><button type="button" class="btn btn-light">Decouvrir</button></a>
+    </div>
 </div>
 <div class="row" id="distinction_medal">
     <div class="col-lg-6" id="container_medal">
@@ -133,15 +105,16 @@
         </div>
     </div>
 </div>
-<div class="second_separator_vertical_1"></div>
-<img id="logo_grey_2" src="\pictures\logo_gris.svg" alt="">
-<div class="second_separator_vertical_2"></div>
-<div class="row">
-    <div id="container_picture" class="col-lg-6">
-        <img data-aos="fade-right" data-aos-duration="1200" id="picture_melissa_delaye" class="img-fluid" src="\pictures\photo_melissa.jpg" alt="">
+<div >
+    <div class="vertical_item_2">
+        <div class="separator_vertical_2"></div>
+        <img id="logo_grey_2" src="\pictures\logo_gris.jpg" alt="">
     </div>
-    <div id="container_text_actuality" class="col-lg-6">
-        <div id="toto">
+    <div id="row_actuality" class="row">
+        <div id="container_picture" class="col-lg-6">
+            <img data-aos="fade-right" data-aos-duration="1200" id="picture_melissa_delaye" class="img-fluid" src="\pictures\photo_melissa.jpg" alt="">
+        </div>
+        <div id="container_text_actuality" class="col-lg-6">
             <div id="title_actuality">
                 <h1 id="jk1" class="main_title">Les actus</h1>
                 <h2 id="jk2" class="second_title">La maison delaye</h2>
@@ -151,19 +124,19 @@
             <a href="{{ path('actuality') }}"><button id="btn_actuality" type="button" class="btn btn-light">Decouvrir</button></a>
         </div>
     </div>
-</div>
-<div id="row_actuality" class="row">
-    <div id="container_text_menu" class="col-lg-6">
-        <div id="title_card">
-            <h1 id="jk3" class="main_title">De saison</h1>
-            <h2 id="jk4" class="second_title">La carte</h2>
+    <div id="row_card" class="row">
+        <div id="container_text_menu" class="col-lg-6">
+            <div id="title_card">
+                <h1 id="jk3" class="main_title">De saison</h1>
+                <h2 id="jk4" class="second_title">La carte</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod quidem tempora sed, assumenda, deleniti inventore saepe quisquam dolore architecto delectus quae hic ipsam culpa consequuntur enim doloremque ducimus nisi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus et, quibusdam provident delectus, rem temporibus quam ullam vitae repellendus eum aliquam sed id ad fugiat perferendis ipsa! Eveniet, quasi aut.</p>
+            <div class="separator_menu"></div>
+            <a href="{{ path('card') }}"><button id="btn_menu" type="button" class="btn btn-light">Decouvrir</button></a>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod quidem tempora sed, assumenda, deleniti inventore saepe quisquam dolore architecto delectus quae hic ipsam culpa consequuntur enim doloremque ducimus nisi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus et, quibusdam provident delectus, rem temporibus quam ullam vitae repellendus eum aliquam sed id ad fugiat perferendis ipsa! Eveniet, quasi aut.</p>
-        <div class="separator_menu"></div>
-        <a href="{{ path('card') }}"><button id="btn_menu" type="button" class="btn btn-light">Decouvrir</button></a>
-    </div>
-    <div id="container_picture_menu" class="col-lg-6">
-        <img data-aos="fade-left" data-aos-duration="1200" id="picture_menu" class="img-fluid" src="\pictures\photo_menu.jpg" alt="">
+        <div id="container_picture_menu" class="col-lg-6">
+            <img data-aos="fade-left" data-aos-duration="1200" id="picture_menu" class="img-fluid" src="\pictures\photo_menu.jpg" alt="">
+        </div>
     </div>
 </div>
 <div>

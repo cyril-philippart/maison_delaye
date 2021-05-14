@@ -125,3 +125,19 @@ function changeIndexToggle(checkboxElem)
     changePosition.style.position = "absolute"
 	}
 }
+
+$(window).scroll(function(){
+  var scrollPos = $(this).scrollTop() / 22;
+
+  $('#logo_grey').css({
+    'left' : 80 - scrollPos + '%'
+  })
+})
+
+$(window).scroll(function(){
+  var scrollPos = $(this).scrollTop() / 14.5;
+
+  $('#logo_grey_2').css({
+    'left' : 205 - scrollPos + '%'
+  })
+})
