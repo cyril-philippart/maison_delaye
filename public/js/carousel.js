@@ -96,14 +96,32 @@ function changeIndexToggle(checkboxElem)
 {
 	if (checkboxElem.checked) 
 	{
+    $('.slider' ).toggleClass('special');
 		changeIndex = document.querySelector('#hamburger_overlay #hamburger_menu_activated')
 		changeIndex.style.zIndex = "1"
+    changeIndex.style.position = "fixed"
+
+    changeIndex = document.querySelector('.carousel')
+    changeIndex.style.zIndex = "-1"
+
+    changePosition = document.querySelector('.hamburger')
+    changePosition.style.position = "fixed"
+
+    changePosition = document.querySelector('.toggler')
+    changePosition.style.position = "fixed"
+    
 	}
   else 
 	{
+    $('.slider' ).removeClass('special');
 		changeIndex = document.querySelector('#hamburger_overlay #hamburger_menu_activated')
 		changeIndex.style.transition = 'all 1.6s ease';
     changeIndex.style.zIndex = '-1';
+
+    changePosition = document.querySelector('.hamburger')
+    changePosition.style.position = "absolute"
     
+    changePosition = document.querySelector('.toggler')
+    changePosition.style.position = "absolute"
 	}
 }
