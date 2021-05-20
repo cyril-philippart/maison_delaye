@@ -2,8 +2,10 @@
 
 namespace App\Controller;
 
+use App\Form\ContactType;
 use App\Repository\ProductsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -51,12 +53,47 @@ class MainController extends AbstractController
     }
 
     /**
-     * @Route("/contact", name="contact")
+     * @Route("/contact", name="contact", methods={"GET","POST"})
      */
-    public function contact(): Response
+    public function contactCreate(Request $request, \Swift_Mailer $mailer)
     {
-        return $this->render('contact.html.twig', [
+        $form = $this->createForm(ContactType::class);
+        $form->handleRequest($request);
+        $messageValidation = '';
+        
+        if ($form->isSubmitted() && $form->isValid()) 
+        {
+            $messageFromClient = $form->getData();
+            $message = (new \Swift_Message('Nouveau message'))
+                ->setFrom($messageFromClient['mail'])
+                ->setTo('cissou06750@gmail.com')
+                ->setBody(
+                    $this->renderView(
+                        'layout/mail.html.twig', ['messageFromClient' => $messageFromClient ]
+                    ), 'text/html'
+                )
+            ;
+            $mailer->send($message);
 
-        ]);
+            $informationClient = $form->getData();
+    
+            $firstname = $informationClient['firstname'];
+            $lastname = $informationClient['lastname'];
+            $company = $informationClient['company'];
+            $mail = $informationClient['mail'];
+            $object = $informationClient['object'];
+            $message = $informationClient['message'];
+
+            if ($firstname !== '' || $lastname !== '' || $company !== '' || $mail !== '' || $object !== '' || $message !== '') {
+                $messageValidation = 'Votre message à bien été envoyé';
+            }
+        }
+
+        
+            return $this->render('contact.html.twig', [
+                'form' => $form->createView(),
+                'messageValidation' => $messageValidation
+            ]);
+        
     }
 }

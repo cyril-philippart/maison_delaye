@@ -30,7 +30,6 @@ body {
     width: 50px;
     height: 50px;
     text-align: center;
-    border-radius: 4px;
     position: fixed;
     bottom: 88px;
     right: 88px;
@@ -105,6 +104,7 @@ nav > ul >li {
     color: #8a6443;
     transition: color 0.6s ease;
     text-transform: uppercase;
+    letter-spacing: 0.2rem;
 }
 
 .link_navbar:hover {
@@ -1334,4 +1334,105 @@ footer {
     #legal_mention {
         margin-top: 2rem;
     }
+}
+
+/************************************************************************************************************/
+/*                                                                                                          */
+/*                                              PAGE CONTACT                                                */
+/*                                                                                                          */
+/************************************************************************************************************/
+#background_contact {
+    height: 350px;
+    background-image: url(/pictures/photo_devanture.JPG);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5rem;
+}
+
+#overlay_background_contact {
+    background-color: rgba(0, 0, 0, 0.600);
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title_contact > h2 {
+    color: white;
+    letter-spacing: 0.3rem;
+    font-size: 3rem;
+    font-family: "de-bambeet";
+}
+
+#title_page_contact {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+#row_contact {
+    justify-content: center;
+}
+
+#row_contact > .col {
+    text-align: center;
+}
+
+#phone_contact > i,
+#places_contact > i,
+#mail_contact > i {
+    font-size: 2rem;
+    color: #8a6443;
+    margin-bottom: 2rem;
+}
+
+#phone_contact > h3,
+#places_contact > h3,
+#mail_contact > h3 {
+    font-size: 1.3rem;
+    color: #8a6443;
+}
+
+#phone_contact > p,
+#places_contact > p,
+#mail_contact > a > p {
+    color: black;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+#no_margin {
+    margin-bottom: 0;
+}
+
+#container_places_contact {
+    border-left: 2px #8a6443 solid;
+    border-right: 2px #8a6443 solid;
+}
+
+#aside_message {
+    width: 50%;
+    text-align: center;
+    margin: 5rem auto;
+}
+
+#aside_message > span {
+    color: #8a6443;
+    font-style: italic;
+    font-size: 1.1rem;
+}  
+
+#container_form_contact {
+    width: 30%;
+    margin: auto;
+}
+
+#message_validation {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: green;
+    font-weight: bold;
+    font-style: italic;
 }
