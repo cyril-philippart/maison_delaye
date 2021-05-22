@@ -112,6 +112,12 @@ nav > ul >li {
     color: #5a4027;
 }
 
+.vegas-content-scrollable {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
 /************************/
 /*                      */
 /* Menu / menu burger   */
@@ -256,17 +262,15 @@ nav > ul >li {
 /**********************/
 
 #card_main_img {
-    background: url(/pictures/testimage.jpg) no-repeat;
     min-height: 100vh;
-    min-width: 99vw;
+    min-width: 100vw;
     background-size: cover;
 }
 
 #container_main_title {
-    position: absolute;
-    top: 48%;
     text-align: center;
     width: 100%;
+    margin-top: 15rem;
 }
  
 #main_title {
