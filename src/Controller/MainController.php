@@ -66,7 +66,7 @@ class MainController extends AbstractController
             $messageFromClient = $form->getData();
             $message = (new \Swift_Message('Nouveau message'))
                 ->setFrom($messageFromClient['mail'])
-                ->setTo('cissou06750@gmail.com')
+                ->setTo('contact@maisondelaye.com')
                 ->setBody(
                     $this->renderView(
                         'layout/mail.html.twig', ['messageFromClient' => $messageFromClient ]

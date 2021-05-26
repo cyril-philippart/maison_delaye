@@ -4,6 +4,36 @@
 
 {% block body %}
 {% include "layout/navBar.html.twig" %}
-<h1>LA MAISON DELAYE</h1>
+    <div id="background_aboutUs">
+		<div id="overlay_background_aboutUs">
+			<div id="title_aboutUs">
+				<h2>La Maison Delaye</h2>
+			</div>
+		</div>
+	</div>
+    <h1 id="main_title_aboutUs">A Propos de nous</h1>
+    <div id="card_presentation" class="row row-cols-1 row-cols-md-3">
+        <div class="col img_team">
+            <img src="{{ asset('/pictures/photo_melissa.jpg') }}" alt="">
+        </div>
+        <div class="col">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi fugit modi natus consequatur atque aut quo alias, quisquam voluptatibus aliquid unde tenetur nemo similique asperiores illo fugiat at, iure sequi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus unde at? Itaque minus repudiandae provident magnam distinctio cumque perspiciatis facere ipsum asperiores error. Veniam quis natus autem quo debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reprehenderit mollitia nihil eos dolores quas aut animi alias deleniti harum autem ad, illum ex excepturi natus, blanditiis cupiditate culpa voluptatum.</p>
+        </div>
+        <div class="col img_team">
+            <img src="{{ asset('/pictures/photo_melissa.jpg') }}" alt="">
+        </div>
+    </div>
+    <div id="banner_about">
+        <div id="banner_overlay_background_aboutUs"></div>
+    </div>
+
+    <div id="slider_comments">
+        <div id="quote"></div>
+        <p id="item1">coucou</p>
+        <p id="item2">comment ça va</p>
+        <p id="item3">au revoir</p>
+        <p id="item4">au revoir</p>
+        <p id="item5">au revoir</p>
+    </div>
 
 {% endblock %}

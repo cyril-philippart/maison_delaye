@@ -1354,7 +1354,8 @@ footer {
     margin-bottom: 5rem;
 }
 
-#overlay_background_contact {
+#overlay_background_contact,
+#overlay_background_aboutUs{
     background-color: rgba(0, 0, 0, 0.600);
     height: 350px;
     display: flex;
@@ -1362,7 +1363,8 @@ footer {
     justify-content: center;
 }
 
-#title_contact > h2 {
+#title_contact > h2,
+#title_aboutUs > h2 {
     color: white;
     letter-spacing: 0.3rem;
     font-size: 3rem;
@@ -1548,3 +1550,128 @@ footer {
         width: 100%;
     }
 }
+
+/*************************************************************************************************************/
+/*                                                                                                           */
+/*                                              PAGE A PROPOS                                                */
+/*                                                                                                           */
+/*************************************************************************************************************/
+
+#background_aboutUs {
+    height: 350px;
+    background-image: url(/pictures/photo_devanture.JPG);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5rem;
+}
+
+#main_title_aboutUs {
+    text-align:center ;
+    margin-bottom: 3rem;
+}
+
+#card_presentation {
+    width: 70%;
+    margin: auto;
+    align-items: center;
+
+}
+
+#card_presentation > div {
+    text-align: center;
+}
+
+.img_team > img {
+    width: 60%;
+}
+
+#banner_about {
+    height: 350px;
+    width: 70%;
+    margin: 5rem auto ;
+    background-image: url(/pictures/photo_devanture.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+#banner_overlay_background_aboutUs {
+    background-color: rgba(0, 0, 0, 0.600);
+    height: 350px;
+}
+
+#slider_comments {
+    width: 70%;
+    margin:auto;
+    height: 200px;
+}
+
+#quote {
+}
+
+#item1, 
+#item2, 
+#item3,
+#item4,
+#item5 {
+	position: absolute;
+    display: block;
+    width: 50%;
+    font-size: 2em;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+    text-align: center;
+}
+
+#item1 {
+	animation-name: anim-1;
+}
+
+#item2 {
+	animation-name: anim-2;
+}
+
+#item3 {
+	animation-name: anim-3;
+}
+
+#item4 {
+	animation-name: anim-4;
+}
+
+#item5 {
+	animation-name: anim-5;
+}
+
+@keyframes anim-1 {
+    0%, 8.3% { left: -100%; opacity: 0; }
+    8.3%,25% { left: 25%; opacity: 1; }
+    33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+    0%, 33.33% { left: -100%; opacity: 0; }
+    41.63%, 58.29% { left: 25%; opacity: 1; }
+    66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+    0%, 66.66% { left: -100%; opacity: 0; }
+    74.96%, 91.62% { left: 25%; opacity: 1; }
+    100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-4 {
+    0%, 66.66% { left: -100%; opacity: 0; }
+    74.96%, 91.62% { left: 25%; opacity: 1; }
+    100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-5 {
+    0%, 66.66% { left: -100%; opacity: 0; }
+    74.96%, 91.62% { left: 25%; opacity: 1; }
+    100% { left: 110%; opacity: 0; }
+}
+
+
+
