@@ -19,7 +19,7 @@
 
     <footer>
         <div id="main_containter_footer">
-            <a href="{{ path('homepage') }}"><img src="\pictures\logo-maison-delaye.png" alt=""></a>
+            <a href="{{ path('homepage') }}"><img src="{{ asset('/pictures/logo-maison-delaye.png') | imagine_filter('logo_delaye') }}" alt=""></a>
             <div id="icons_social_media">
                 <a href="https://www.facebook.com/maisondelaye" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="https://www.instagram.com/maisondelaye_officiel/" target="_blank"><i id="fab" class="fab fa-instagram"></i></a>

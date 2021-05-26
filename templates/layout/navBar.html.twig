@@ -1,5 +1,5 @@
 <header>
-    <a id="link_home" href="{{ path('homepage') }}"><img id="logoMaisonDelaye" class="img-fluid" src="\pictures\logo-maison-delaye.png" alt="logo Maison Delaye"></a>
+    <a id="link_home" href="{{ path('homepage') }}"><img id="logoMaisonDelaye" class="img-fluid" src="{{ asset('/pictures/logo-maison-delaye.png') | imagine_filter('logo_delaye') }}" alt="logo Maison Delaye"></a>
     <div id="hamburger_overlay">
         <div id="hamburger-content">
             <nav>

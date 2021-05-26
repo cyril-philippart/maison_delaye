@@ -1,5 +1,7 @@
 {% extends 'layout/base.html.twig' %}
 
+{% block title %}Maison DELAYE{% endblock %}
+
 {% block body %}
 <div id="card_main_img">
    {% include "layout/navBar.html.twig" %}
@@ -11,7 +13,7 @@
 <div id="container_skills" >
 <div class="vertical_item">
     <div class="separator_vertical"></div>
-    <img id="logo_grey" src="\pictures\logo_gris.jpg" alt="">
+    <img id="logo_grey" src="{{ asset('pictures/logo_gris.jpg')| imagine_filter('logo_grey') }}" alt="">
 </div>
     <div id="section_skills">
         <h1 data-aos="fade-right" data-aos-duration="1200" id="skill">Savoir-faire</h1>
@@ -24,25 +26,25 @@
     <section>
         <ul class="carousel">
             <li class="items main-pos" id="1">
-                <img class="picture_product" src="\uploads\pictures_products\1.jpg" />
+                <img class="picture_product" src="{{ asset('/uploads/pictures_products/1.jpg') | imagine_filter('image_Products') }}" />
             </li>
             <li class="items right-pos" id="2">
-                <img class="picture_product"src="\uploads\pictures_products\2.jpg" />
+                <img class="picture_product" src="{{ asset('/uploads/pictures_products/2.jpg') | imagine_filter('image_Products') }}" />
             </li>
             <li class="items back-pos" id="3">
-                <img class="picture_product"src="\uploads\pictures_products\3.jpg"/>
+                <img class="picture_product" src="{{ asset('/uploads/pictures_products/3.jpg') | imagine_filter('image_Products') }}"/>
             </li>
             <li class="items back-pos" id="4">
-                <img class="picture_product"src="\uploads\pictures_products\4.jpg" >
+                <img class="picture_product" src="{{ asset('/uploads/pictures_products/4.jpg') | imagine_filter('image_Products') }}" >
             </li>
             <li class="items back-pos" id="5">
-                <img class="picture_product" src="\uploads\pictures_products\5.jpg" />
+                <img class="picture_product" src="{{ asset('/uploads/pictures_products/5.jpg') | imagine_filter('image_Products') }}" />
             </li>
             <li class="items back-pos" id="6">
-                <img class="picture_product" src="\uploads\pictures_products\6.jpg" />
+                <img class="picture_product" src="{{ asset('/uploads/pictures_products/6.jpg') | imagine_filter('image_Products') }}" />
             </li>
             <li class="items left-pos" id="7">
-                <img class="picture_product" src="\uploads\pictures_products\7.jpg" />
+                <img class="picture_product" src="{{ asset('/uploads/pictures_products/7.jpg') | imagine_filter('image_Products') }}" />
             </li>
         </ul>
         <span>
@@ -66,40 +68,40 @@
         <div class="slider">
 	        <div class="slide-track">
                 <div class="slide">
-                    <img src="\pictures\medailles\Medaille_Benjamin_BBR.png"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Benjamin_BBR.png') | imagine_filter('image_medaille') }}"/>
                 </div>
                 <div class="slide">
-                    <img src="\pictures\medailles\Medaille_Mélissa_BBR.png"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Mélissa_BBR.png') | imagine_filter('image_medaille') }}"/>
                 </div>
                 <div class="slide">
-                    <img src="\pictures\medailles\Medaille_PÂTÉ_DE_FOIE_Europe_Or.png"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_PÂTÉ_DE_FOIE_Europe_Or.png') | imagine_filter('image_medaille') }}"/>
                 </div>
                 <div class="slide">
-                    <img src="\pictures\medailles\Medaille_Jambon_de_paris_2017_Argent_simple.png"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Jambon_de_paris_2017_Argent_simple.png') | imagine_filter('image_medaille') }}"/>
                 </div>
                 <div class="slide">
-                    <img src="\pictures\medailles\Medaille_Fromage_de_tête_2018_or.png"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Fromage_de_tête_2018_or.png') | imagine_filter('image_medaille') }}"/>
                 </div>
                 <div class="slide">
-                    <img src="\pictures\medailles\Medaille_Choucroute_2014_argent.png"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Choucroute_2014_argent.png') | imagine_filter('image_medaille') }}"/>
                 </div>
                 <div class="slide">
-                    <img src="\pictures\medailles\Medaille_Benjamin_BBR.png"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Benjamin_BBR.png') | imagine_filter('image_medaille') }}"/>
                 </div>
                 <div class="slide">
-                    <img src="\pictures\medailles\Medaille_Mélissa_BBR.png"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Mélissa_BBR.png') | imagine_filter('image_medaille') }}"/>
                 </div>
                 <div class="slide">
-                    <img src="\pictures\medailles\Medaille_PÂTÉ_DE_FOIE_Europe_Or.png"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_PÂTÉ_DE_FOIE_Europe_Or.png') | imagine_filter('image_medaille') }}"/>
                 </div>
                 <div class="slide">
-                    <img src="\pictures\medailles\Medaille_Jambon_de_paris_2017_Argent_simple.png"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Jambon_de_paris_2017_Argent_simple.png') | imagine_filter('image_medaille') }}"/>
                 </div>
                 <div class="slide">
-                    <img src="\pictures\medailles\Medaille_Fromage_de_tête_2018_or.png"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Fromage_de_tête_2018_or.png') | imagine_filter('image_medaille') }}"/>
                 </div>
                 <div class="slide">
-                    <img src="\pictures\medailles\Medaille_Choucroute_2014_argent.png"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Choucroute_2014_argent.png') | imagine_filter('image_medaille') }}"/>
                 </div>
             </div>
         </div>
@@ -108,11 +110,11 @@
 <div >
     <div class="vertical_item_2">
         <div class="separator_vertical_2"></div>
-        <img id="logo_grey_2" src="\pictures\logo_gris.jpg" alt="">
+        <img id="logo_grey_2" src="{{ asset('pictures/logo_gris.jpg') | imagine_filter('logo_grey') }}" alt="">
     </div>
     <div id="row_actuality" class="row">
         <div id="container_picture" class="col-lg-6">
-            <img data-aos="fade-right" data-aos-duration="1200" id="picture_melissa_delaye" class="img-fluid" src="\pictures\photo_melissa.jpg" alt="">
+            <img data-aos="fade-right" data-aos-duration="1200" id="picture_melissa_delaye" class="img-fluid" src="{{ asset('/pictures/photo_melissa.jpg') | imagine_filter('image_section_3') }}" alt="">
         </div>
         <div id="container_text_actuality" class="col-lg-6">
             <div id="title_actuality">
@@ -135,7 +137,7 @@
             <a href="{{ path('card') }}"><button id="btn_menu" type="button" class="btn btn-light">Decouvrir</button></a>
         </div>
         <div id="container_picture_menu" class="col-lg-6">
-            <img data-aos="fade-left" data-aos-duration="1200" id="picture_menu" class="img-fluid" src="\pictures\photo_menu.jpg" alt="">
+            <img data-aos="fade-left" data-aos-duration="1200" id="picture_menu" class="img-fluid" src="{{ asset('/pictures/photo_menu.jpg') | imagine_filter('image_section_3') }}" alt="">
         </div>
     </div>
 </div>

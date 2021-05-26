@@ -1,5 +1,7 @@
 {% extends 'layout/base.html.twig' %}
 
+{% block title %}Contactez-nous{% endblock %}
+
 {% block body %}
 	{% include "layout/navBar.html.twig" %}
 	<div id="background_contact">
@@ -14,14 +16,14 @@
 	</div>
 	<h1 id="title_page_contact">La boutique</h1>
 	<div id="row_contact" class="row row-cols-1">
-		<div class="col col-md-4">
+		<div class="col col-md-2">
 			<div id="phone_contact">
 				<i class="fas fa-mobile-alt"></i>
 				<h3>Téléphone</h3>
 				<p>01 46 61 01 71</p>
 			</div>
 		</div>
-		<div id="container_places_contact" class="col col-md-4">
+		<div id="container_places_contact" class="col col-md-2">
 			<div id="places_contact">
 				<i class="fas fa-map-marker-alt"></i>
 				<h3>Adresse</h3>
@@ -29,7 +31,7 @@
 				<p>41 rue Houdan, 92230 Sceaux</p>
 			</div>
 		</div>
-		<div class="col col-md-4">
+		<div class="col col-md-2">
 			<div id="mail_contact">
 				<i class="fas fa-envelope"></i>
 				<h3>E-Mail</h3>
@@ -75,5 +77,4 @@
 		{{ form_end(form) }}
 	</div>
 	<div id="map"></div>
-    <script src="js\map.js"></script>
 {% endblock %}

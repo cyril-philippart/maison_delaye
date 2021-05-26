@@ -1463,6 +1463,40 @@ footer {
     border-color: #8a644378;
 }
 
+/*****************************/
+/*                           */
+/*    Responsive tablette    */
+/*                           */
+/*****************************/
+
+@media screen and (max-width : 768px) {
+    #background_contact {
+        margin-bottom: 4rem;
+    }
+
+    #title_page_contact {
+        margin-bottom: 4rem;
+    }
+
+    
+    #aside_message {
+        width: 80%;
+        text-align: center;
+        margin: 4rem auto;
+    }
+
+    #container_form_contact {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    .col-md-2 {
+        width: 30%;
+    }
+
+}
+
 /******************************/
 /*                            */
 /*    Responsive téléphone    */
@@ -1509,34 +1543,8 @@ footer {
     #map {
         height: 300px;
     }
-}
 
-/*****************************/
-/*                           */
-/*    Responsive tablette    */
-/*                           */
-/*****************************/
-
-@media screen and (max-width : 768px) {
-    #background_contact {
-        margin-bottom: 4rem;
+    .col-md-2 {
+        width: 100%;
     }
-
-    #title_page_contact {
-        margin-bottom: 4rem;
-    }
-
-    
-    #aside_message {
-        width: 80%;
-        text-align: center;
-        margin: 4rem auto;
-    }
-
-    #container_form_contact {
-        width: 70%;
-        margin: auto;
-        margin-bottom: 4rem;
-    }
-
 }
