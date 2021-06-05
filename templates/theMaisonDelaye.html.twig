@@ -13,10 +13,10 @@
 	</div>
     <h1 id="main_title_aboutUs">A Propos de nous</h1>
     <div id="card_presentation" class="row row-cols-1 row-cols-md-3">
-        <div class="col img_team">
+        <div id="first_img" class="col img_team">
             <img src="{{ asset('/pictures/photo_melissa.jpg') }}" alt="">
         </div>
-        <div class="col">
+        <div id="text_aboutUS" class="col">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi fugit modi natus consequatur atque aut quo alias, quisquam voluptatibus aliquid unde tenetur nemo similique asperiores illo fugiat at, iure sequi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus unde at? Itaque minus repudiandae provident magnam distinctio cumque perspiciatis facere ipsum asperiores error. Veniam quis natus autem quo debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reprehenderit mollitia nihil eos dolores quas aut animi alias deleniti harum autem ad, illum ex excepturi natus, blanditiis cupiditate culpa voluptatum.</p>
         </div>
         <div class="col img_team">
@@ -26,14 +26,17 @@
     <div id="banner_about">
         <div id="banner_overlay_background_aboutUs"></div>
     </div>
-
+    <div id="about_porcelet_rose">
+        <h2>Au porcelet rose</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptates corporis laboriosam, sint excepturi dolores temporibus numquam debitis, odio odit ea aut sit est ad. Deleniti odio eveniet ipsa. Deserunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam officia doloremque, nulla earum sunt eaque iure. Ut, in consequatur. Perferendis sed sunt doloremque maxime itaque unde repudiandae id debitis maiores!</p>
+    </div>
     <div id="slider_comments">
-        <div id="quote"></div>
-        <p id="item1">coucou</p>
-        <p id="item2">comment ça va</p>
-        <p id="item3">au revoir</p>
-        <p id="item4">au revoir</p>
-        <p id="item5">au revoir</p>
+        <div id="quote">
+            <img src="{{ asset('/pictures/quote.png') }}" alt="">
+        </div>
+        <p id="item1">Produits de haute qualitė,tres bon acceuil de clientėle. <br><br> Mai 2021</p>
+        <p id="item2">Ce traiteur propose des produits de très bonne qualité. Que ce soient les entrées, la charcuterie, les terrines, plats, accompagnements.... tout est excellent ! J’y vais régulièrement et ai toujours été entièrement satisfaite [...] <br><br> Avril 2021</p>
+        <p id="item3">Tout y est excellent ! Des entrées aux desserts, une adresse incontournable à Sceaux. De plus, l'accueil y est toujours chaleureux et professionnel. Une très très belle adresse ! <br><br> Mars 2021</p>
     </div>
 
 {% endblock %}
