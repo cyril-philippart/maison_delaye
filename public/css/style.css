@@ -78,7 +78,7 @@ header {
 }
 
 p {
-    color: #8a6443;
+    color: #022168;
 }
 
 .row {
@@ -341,7 +341,7 @@ nav > ul >li {
 #skill {
     font-family:'de-bambeet';
     font-size: 7rem;
-    color: #8a64433b;
+    color: #0221683b;
     letter-spacing: 0.8rem;
     position: absolute;
     top: -105%;
@@ -349,7 +349,7 @@ nav > ul >li {
 }
 
 #work {
-    color: #8a6443;
+    color: #022168;
     letter-spacing: 0.4rem;
     text-transform: uppercase;
 }
@@ -361,7 +361,7 @@ nav > ul >li {
 }
 
 .separator {
-    border-bottom: 2px solid #8a6443;
+    border-bottom: 2px solid #022168;
     width: 7%;
     margin: auto;
 }
@@ -439,7 +439,7 @@ section > ul {
     font-size: 2em;
     line-height: 40px;
     padding-left: 8px;
-    color: #8a6443;
+    color: #022168;
 }
 
 #next {
@@ -458,7 +458,7 @@ section > ul {
     font-size: 2em;
     line-height: 40px;
     padding-left: 8px;
-    color: #8a6443;
+    color: #022168;
 }
 
 #btn_discover {
@@ -501,6 +501,7 @@ section > ul {
     width: 50%;
     margin: 6rem auto;
     text-align: justify;
+    color: #8a6443;
 }
 
 .main_title {
@@ -593,7 +594,7 @@ section > ul {
     width: 50%;
 }
 
-#row_card,
+.row_card,
 #row_actuality {
     text-align: center;
 }
@@ -605,25 +606,33 @@ section > ul {
 }
 
 .separator_actuality {
-    border-bottom: 2px solid #8a6443;
+    border-bottom: 2px solid #022168;
     width: 7%;
     margin: auto ;
 }
 
 #btn_actuality {
-    color: #8a6443 ;
-    border-color: #8a6443;
+    color: #022168 ;
+    border-color: #022168;
     margin-top: 5rem;
 }
 
 #btn_actuality:hover,
-#btn_menu:hover {
-    color: #8a644378;
-    border-color: #8a644378;
+.btn_menu:hover {
+    color: #02216878;
+    border-color: #02216878;
 }
 
-#row_card {
+.row_card {
     margin-top: 10rem;
+}
+
+#jk2 {
+    color: #022168;
+}
+
+#jk1 {
+    color: #0221683b;
 }
 
 /***********************/
@@ -632,27 +641,36 @@ section > ul {
 /*                     */
 /***********************/
 
-#picture_menu {
+.picture_menu {
     width: 50%;
 }
 
-#container_text_menu > p{
+.container_text_menu > p{
     width: 50%;
     margin: 5rem auto;
     text-align: justify;
 }
 
 .separator_menu {
-    border-bottom: 2px solid #8a6443;
+    border-bottom: 2px solid #022168;
     width: 7%;
     margin: auto;
 }
 
-#btn_menu {
-    color: #8a6443 ;
-    border-color: #8a6443;
+.btn_menu {
+    color: #022168 ;
+    border-color: #022168;
     margin-top: 5rem;
 }
+
+.jk4 {
+    color: #022168;
+}
+
+.jk3 {
+    color: #0221683b;
+}
+
 
 /*************************/
 /*                       */
@@ -707,8 +725,8 @@ section > ul {
 
 #container_text_contact > div > p,
 #container_text_contact > div > h3,
-#jk5,
-#jk6{
+.jk5,
+.jk6{
     color: white;
 }
 
@@ -725,13 +743,13 @@ section > ul {
     margin-top: 8rem;
 }
 
-#jk5 {
+.jk5 {
     margin-top: 6rem;
     margin-left: 30rem;
     color: rgba(255, 255, 255, 0.25);
 }
 
-#jk6 {
+.jk6 {
     padding-top: 9rem;
     padding-left: 1rem;
 }
@@ -891,51 +909,53 @@ footer {
     }
 
     #container_picture > img,
-    #container_picture_menu > img {
+    .container_picture_menu > img {
         margin: 0 ;
     }
 
     #jk1 {
         margin-left: 12rem;
         font-size: 5rem;
+        color: #022168;
     }
 
     #jk2 {
         padding-left: 0;
         font-size: 1.2rem;
         padding-top: 5rem;
+        color: #022168;
     }
 
     #btn_actuality {
         margin-left: 1rem;
     }
 
-    #container_picture_menu {
+    .container_picture_menu {
         width: 100%;
         order: -1;
         text-align:center
     }
 
-    #title_card {
+    .title_card {
         text-align: center;
     }
 
-    #jk3 {
+    .jk3 {
         margin-left: 12rem;
         font-size: 5rem;;
     }
 
-    #jk4 {
+    .jk4 {
         padding-left: 0rem;
         padding-top: 6rem;
     }
 
-    #container_text_menu > p {
+    .container_text_menu > p {
         width: 57%;
         margin-left: 10rem;
     }
 
-    #jk5 {
+    .jk5 {
         margin-top: 7rem;
         margin-left: 0rem;
         width: 100%;
@@ -1036,17 +1056,17 @@ footer {
 
     #container_picture,
     #container_text_actuality,
-    #container_text_menu {
+    .container_text_menu {
         text-align: center;
     }
 
     #picture_melissa_delaye,
-    #picture_menu {
+    .picture_menu {
         width: 80%;
     }
 
     #container_picture > img,
-    #container_picture_menu > img {
+    .container_picture_menu > img {
         margin: 0 ;
     }
 
@@ -1061,7 +1081,7 @@ footer {
     }
 
     #container_text_actuality > p,
-    #container_text_menu > p {
+    .container_text_menu > p {
         width: 85%;
         margin: 4rem auto;
     }
@@ -1072,24 +1092,24 @@ footer {
     }
 
     #btn_actuality,
-    #btn_menu {
+    .btn_menu {
         margin-left: 0;
     }
 
-    #container_picture_menu {
+    .container_picture_menu {
         text-align : center;
     }
 
-    #jk3 {
+    .jk3 {
         margin: 0;
     }
 
-    #jk4 {
+    .jk4 {
         padding-top: 2.5rem;
         padding-left: 0;
     }
 
-    #jk5 {
+    .jk5 {
         margin-top: 7rem;
         margin-left: 0rem;
         width: 100%;
@@ -1244,7 +1264,7 @@ footer {
 
     .main_title,
     #jk1,
-    #jk3 {
+    .jk3 {
         font-size: 5rem;
         letter-spacing: 0.3rem;
         width: 98%;
@@ -1253,25 +1273,25 @@ footer {
 
     .second_title,
     #jk2,
-    #jk4 {
+    .jk4 {
         letter-spacing: 0.2rem;
         padding-top: 5rem;
         font-size: 1.3rem;
     }
 
-    #jk4 {
+    .jk4 {
         padding-top: 6rem;
     }
 
     #container_medal > p,
     #container_text_actuality > p,
-    #container_text_menu > p {
+    .container_text_menu > p {
         width: 90%;
         margin: 3rem auto;
     }
 
     #picture_melissa_delaye,
-    #picture_menu {
+    .picture_menu {
         width: 85%;
     }
     
@@ -1282,7 +1302,7 @@ footer {
     }
 
     #btn_actuality,
-    #btn_menu {
+    .btn_menu {
         margin-top: 3rem;
         margin-left:0 ;
     }
@@ -1301,12 +1321,12 @@ footer {
         height: 600px;
     }
 
-    #jk5 {
+    .jk5 {
         margin-top: 3.8rem;
         font-size: 4rem;
     }
 
-    #jk6 {
+    .jk6 {
         padding-top: 5rem;
         padding-left: 0 ;
     }
@@ -1348,7 +1368,8 @@ footer {
 }
 
 #overlay_background_contact,
-#overlay_background_aboutUs{
+#overlay_background_aboutUs,
+#overlay_background_card{
     background-color: rgba(0, 0, 0, 0.600);
     height: 350px;
     display: flex;
@@ -1357,7 +1378,8 @@ footer {
 }
 
 #title_contact > h2,
-#title_aboutUs > h2 {
+#title_aboutUs > h2,
+#title_page_card >h2 {
     color: white;
     letter-spacing: 0.3rem;
     font-size: 3rem;
@@ -1372,11 +1394,11 @@ footer {
     margin-bottom: 5rem;
 }
 
-#row_contact {
+.row_contact {
     justify-content: center;
 }
 
-#row_contact > .col {
+.row_contact > .col {
     text-align: center;
 }
 
@@ -1384,7 +1406,7 @@ footer {
 #places_contact > i,
 #mail_contact > i {
     font-size: 2rem;
-    color: #8a6443;
+    color: #022168;
     margin-bottom: 2rem;
 }
 
@@ -1392,7 +1414,7 @@ footer {
 #places_contact > h3,
 #mail_contact > h3 {
     font-size: 1.3rem;
-    color: #8a6443;
+    color: #022168;
 }
 
 #phone_contact > p,
@@ -1408,8 +1430,8 @@ footer {
 }
 
 #container_places_contact {
-    border-left: 2px #8a6443 solid;
-    border-right: 2px #8a6443 solid;
+    border-left: 2px #022168 solid;
+    border-right: 2px #022168 solid;
 }
 
 #aside_message {
@@ -1419,7 +1441,7 @@ footer {
 }
 
 #aside_message > span {
-    color: #8a6443;
+    color: #022168;
     font-style: italic;
     font-size: 1.1rem;
 }  
@@ -1438,24 +1460,15 @@ footer {
     font-style: italic;
 }
 
-#map {
-    height: 500px;
-}
-
-.leaflet-popup-content > span {
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
 #btn_contact {
-    color: #8a6443 ;
-    border-color: #8a6443;
+    color: #022168 ;
+    border-color: #022168;
 }
 
 #btn_contact:hover,
 #btn_contact:hover {
-    color: #8a644378;
-    border-color: #8a644378;
+    color: #02216878;
+    border-color: #02216878;
 }
 
 /*****************************/
@@ -1564,7 +1577,7 @@ footer {
 }
 
 #card_presentation {
-    width: 70%;
+    width: 45%;
     margin: auto;
     align-items: center;
 
@@ -1686,18 +1699,7 @@ footer {
         width: 90%;
     }
 
-    #first_img {
-        order: 1;
-    }
-
-    .img_team {
-        width: 50%;
-        padding: 0;
-    }
-
-    .img_team > img {
-        width: 85%;
-    }
+    
 
     #text_aboutUS {
         margin-bottom: 2rem;
@@ -1730,5 +1732,160 @@ footer {
     #slider_comments {
         height: 400px;
     }
+}
+/******************************/
+/*                            */
+/*    Responsive téléphone    */
+/*                            */
+/******************************/
+@media screen and (max-width : 768px) {
+    #card_presentation {
+        width: 70%;
+    }
+    
+    #first_img {
+        order: 1;
+    }
 
+    .img_team {
+        width: 50%;
+        padding: 0;
+    }
+
+    .img_team > img {
+        width: 85%;
+    }
+
+    #banner_about {
+        width: 85%;
+    }
+
+    #slider_comments {
+        height: 280px;
+    }
+
+    @keyframes anim-1 {
+        0%, 8.3% { left: -50%; opacity: 0; }
+        8.3%,25% { left: 25%; opacity: 1; }
+        33.33%, 100% { left: 50%; opacity: 0; }
+    }
+    
+    @keyframes anim-2 {
+        0%, 33.33% { left: -50%; opacity: 0; }
+        41.63%, 58.29% { left: 25%; opacity: 1; }
+        66.66%, 100% { left: 50%; opacity: 0; }
+    }
+    
+    @keyframes anim-3 {
+        0%, 66.66% { left: -50%; opacity: 0; }
+        74.96%, 91.62% { left: 25%; opacity: 1; }
+        100% { left: 50%; opacity: 0; }
+    }
+}
+
+
+/**********************************************************************************************************/
+/*                                                                                                        */
+/*                                              PAGE CARTE                                                */
+/*                                                                                                        */
+/**********************************************************************************************************/
+#background_card {
+    height: 350px;
+    background-image: url(/pictures/photo_banniere_carte.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5rem;
+}
+
+#special_card {
+    height: 650px;
+    background-image: url(/pictures/photo_carte_spéciale.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 10rem 0;
+}
+
+.title_special_card {
+    text-align: center;
+}
+
+#overlay_special_card{
+    background-color: rgba(0, 0, 0, 0.600);
+    height: 650px;
+}
+
+.aside_special_card {
+    color: white;
+    width: 35%;
+    margin: 8rem auto ;
+}
+
+.comming_soon {
+    border: 2px solid white;
+    width: 34%;
+    padding: 0.5rem 2rem;
+    margin: auto;
+}
+
+.comming_soon > p {
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+}
+
+#align {
+    margin-left: 30rem;
+}
+
+.container_command > h3 {
+    text-transform: uppercase;
+    color: #022168;
+    margin: 2rem 0;
+}
+
+#row_command {
+    margin: 10rem 0;
+}
+
+#row_command > div {
+    padding: 0 2rem;
+}
+
+#container_command_payment {
+    border-right: 2px #022168 solid;
+}
+
+.title_services {
+    color: #022168;
+    letter-spacing: 0.2rem;
+    font-family: 'Cormorant Garamond';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.mosaic_img {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.img_1 {
+    grid-row: span 2;
+    grid-column: span 2;
+    height: 500px;
+    width: 281px;
+}
+
+.img_2 {
+    height: 300px;
+    width: 300px;
+}
+
+.img_3 {
+    height: 200px;
+    width: 281px  
 }

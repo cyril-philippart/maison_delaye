@@ -126,26 +126,26 @@
             <a href="{{ path('actuality') }}"><button id="btn_actuality" type="button" class="btn btn-light">Decouvrir</button></a>
         </div>
     </div>
-    <div id="row_card" class="row">
-        <div id="container_text_menu" class="col-lg-6">
-            <div id="title_card">
-                <h1 id="jk3" class="main_title">De saison</h1>
-                <h2 id="jk4" class="second_title">La carte</h2>
+    <div class="row row_card">
+        <div class="col-lg-6 container_text_menu">
+            <div class="title_card">
+                <h1 class="main_title jk3">De saison</h1>
+                <h2 class="second_title jk4">La carte</h2>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod quidem tempora sed, assumenda, deleniti inventore saepe quisquam dolore architecto delectus quae hic ipsam culpa consequuntur enim doloremque ducimus nisi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus et, quibusdam provident delectus, rem temporibus quam ullam vitae repellendus eum aliquam sed id ad fugiat perferendis ipsa! Eveniet, quasi aut.</p>
             <div class="separator_menu"></div>
-            <a href="{{ path('card') }}"><button id="btn_menu" type="button" class="btn btn-light">Decouvrir</button></a>
+            <a href="{{ path('card') }}"><button type="button" class="btn btn-light btn_menu">Decouvrir</button></a>
         </div>
-        <div id="container_picture_menu" class="col-lg-6">
-            <img data-aos="fade-left" data-aos-duration="1200" id="picture_menu" class="img-fluid" src="{{ asset('/pictures/photo_menu.jpg') | imagine_filter('image_section_3') }}" alt="">
+        <div class="col-lg-6 container_picture_menu">
+            <img data-aos="fade-left" data-aos-duration="1200" class="img-fluid picture_menu" src="{{ asset('/pictures/photo_menu.jpg') | imagine_filter('image_section_3') }}" alt="">
         </div>
     </div>
 </div>
 <div id="container_contact">
     <div id="container_contact_opacity">
         <div id="title_contact_homepage">
-            <h1 data-aos="fade-right" data-aos-duration="1200" id="jk5"class="main_title">La boutique</h1>
-            <h2 id="jk6"class="second_title">Sceaux</h2>
+            <h1 data-aos="fade-right" data-aos-duration="1200" class="main_title jk5">La boutique</h1>
+            <h2 class="second_title jk6">Sceaux</h2>
         </div>
         <div id="container_text_contact">
             <div class="text_contact">
