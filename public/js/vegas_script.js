@@ -58,4 +58,49 @@ $(".img_3").vegas({
       animation: 'random',
       animationDuration: '7000'
 });
+
+$(".img_4").vegas({
+    slides: [
+        { src: "/pictures/plats 1.jpg" },
+        { src: "/pictures/plats 3.jpg" },
+        { src: "/pictures/plats 4.jpg" }
+    ],
+  
+    overlay: true,
+      transition: 'fade',
+      transitionDuration: '1000',
+      delay: '7000',
+      animation: 'random',
+      animationDuration: '7000'
+});
+
+$(".img_5").vegas({
+    slides: [
+        { src: "/pictures/plats 1.jpg" },
+        { src: "/pictures/plats 3.jpg" },
+        { src: "/pictures/plats 4.jpg" }
+    ],
+  
+    overlay: true,
+      transition: 'fade',
+      transitionDuration: '1000',
+      delay: '7000',
+      animation: 'random',
+      animationDuration: '7000'
+});
+
+$(".img_6").vegas({
+    slides: [
+        { src: "/uploads/pictures_products/1.jpg" },
+        { src: "/uploads/pictures_products/2.jpg" },
+        { src: "/uploads/pictures_products/3.jpg" }
+    ],
+  
+    overlay: true,
+      transition: 'fade',
+      transitionDuration: '1000',
+      delay: '10000',
+      animation: 'random',
+      animationDuration: '10000'
+});
  

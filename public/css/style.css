@@ -1845,6 +1845,11 @@ footer {
     margin: 2rem 0;
 }
 
+.container_command > p > a {
+    text-decoration: none;
+    color: #022168;
+}
+
 #row_command {
     margin: 10rem 0;
 }
@@ -1865,27 +1870,44 @@ footer {
     text-align: center;
 }
 
-
 .mosaic_img {
     display: grid;
-    height: 100%;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 100%;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .img_1 {
-    grid-row: span 2;
-    grid-column: span 2;
-    height: 500px;
-    width: 281px;
+    grid-column: 1/2;
+    grid-row: 1/8;
 }
 
 .img_2 {
-    height: 300px;
-    width: 300px;
+    grid-column: 2/4;
+    grid-row: 1/8; 
 }
 
 .img_3 {
-    height: 200px;
-    width: 281px  
+    grid-column: 2/4;
+    grid-row: 5/8;
+}
+
+.img_4 {
+    grid-column: 4/8;
+    grid-row: 1/4;
+}
+
+.img_5 {
+    grid-column: 4/4;
+    grid-row: 4/8;
+}
+
+.img_6 {
+    grid-column: 5/8;
+    grid-row: 4/8;
+}
+
+.img_service {
+    margin-bottom: 8rem;
+    margin-top: 3rem;
 }

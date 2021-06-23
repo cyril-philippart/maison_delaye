@@ -14,7 +14,7 @@
     <div class="row row_card">
         <div class="col-lg-6 container_text_menu">
             <div class="title_card">
-                <h1 class="main_title jk3">De saison</h1>
+                <h1 data-aos="fade-right" data-aos-duration="1200" class="main_title jk3">De saison</h1>
                 <h2 class="second_title jk4">La carte</h2>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod quidem tempora sed, assumenda, deleniti inventore saepe quisquam dolore architecto delectus quae hic ipsam culpa consequuntur enim doloremque ducimus nisi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus et, quibusdam provident delectus, rem temporibus quam ullam vitae repellendus eum aliquam sed id ad fugiat perferendis ipsa! Eveniet, quasi aut.</p>
@@ -28,7 +28,7 @@
     <div id="special_card">
         <div id="overlay_special_card">
             <div class="title_special_card">
-                <h1 class="main_title jk5">Des fetes</h1>
+                <h1 data-aos="fade-right" data-aos-duration="1200" class="main_title jk5">Des fetes</h1>
                 <h2 class="second_title jk6">Les collections</h2>
             </div>
             <p class="aside_special_card">Pour les évènements calendaire, nos chefs imaginent et créent des menus issus du savoir-faire de la Maison Delaye pour des voyages dans l'universde l'authenticité et des saveurs</p>
@@ -39,7 +39,7 @@
     </div>
     <div class="command">
         <div class="title_special_card">
-            <h1 id="align" class="main_title jk3">Pour passer</h1>
+            <h1 data-aos="fade-right" data-aos-duration="1200" id="align" class="main_title jk3">Pour passer</h1>
             <h2 class="second_title jk4">commande</h2>
         </div>
         <div id="row_command" class="row row-cols-2 row_contact">
@@ -54,7 +54,7 @@
                 <div class="container_command">
                     <img src="{{ asset('/pictures/téléphone_icone.png') }}" alt="">
                     <h3>A distance</h3>
-                    <p id="no_margin">Passez commande par téléphone au <br> 01 46 61 01 71 ou par mail à <a href="mailto:contact@maisondelaye.com" target="_blank"> <em>contact@maisondelaye.com</em></a></p>
+                    <p id="no_margin">Passez commande par téléphone au 01 46 61 01 71 ou par mail à <a href="mailto:contact@maisondelaye.com" target="_blank"> contact@maisondelaye.com</a></p>
                 </div>
             </div>
             <div id="container_command_payment" class="col col-md-2">
@@ -77,6 +77,11 @@
         <div class="title_services">
             <h2>Nos Service</h2>
             <img src="{{ asset('/pictures/design_services.png') }}" alt="">
+            <div class="img_service">
+                <img src="{{ asset('/pictures/location.png') }}" alt="">
+                <img src="{{ asset('/pictures/maitre hotel.png') }}" alt="">
+                <img src="{{ asset('/pictures/livraison.png') }}" alt="">
+            </div>
         </div>
     </div>
     <div class="mosaic_img">
@@ -87,5 +92,4 @@
         <div class="img_product img_5"></div>
         <div class="img_product img_6"></div>
     </div>
-
 {% endblock %}
