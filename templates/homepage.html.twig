@@ -7,7 +7,7 @@
    {% include "layout/navBar.html.twig" %}
     <div id="container_main_title">
         <h1 id="main_title">De l'art et du cochon</h2>
-        <a id="second_title" href="{{ path('card') }}"><span>Voir la carte</span><i class="fas fa-chevron-right"></i></a>
+        <a id="second_title" href="{{ path('card') }}"><span>Voir notre carte</span><i class="fas fa-chevron-right"></i></a>
     </div>
 </div>
 <div id="container_skills" >
@@ -16,11 +16,11 @@
     <img id="logo_grey" src="{{ asset('pictures/logo_gris.jpg')| imagine_filter('logo_grey') }}" alt="">
 </div>
     <div id="section_skills">
-        <h1 data-aos="fade-right" data-aos-duration="1200" id="skill">Savoir-faire</h1>
+        <span data-aos="fade-right" data-aos-duration="1200" id="skill">Savoir-faire</span>
         <h2 id="work">Charcutier</h2>
     </div>
     <aside id="about">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut molestiae error eos beatae architecto. Eius vitae necessitatibus voluptates enim corporis voluptas, inventore suscipit dolores saepe. Corrupti porro doloribus facilis eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo quam expedita, perferendis ipsa obcaecati mollitia harum neque, doloribus cumque eveniet sunt iure soluta ipsum possimus nam corrupti fugiat fugit!</p>
+        <p>Véritable institution de la Rue Houdan à Sceaux, “Au Porcelet Rose” vous ouvre les portes de la « Maison DELAYE « , où charcuterie d’excellence et mets traiteur de tradition française se mêlent : persillé de jambon de Bourgogne, rillons, foie gras, pâtés en croûte primés, osso bucco de lotte, confit d’agneau, choucroute… découvrez l’art de sublimer le cochon.</p>
     </aside>
     <div class="separator"></div>
     <section>
@@ -59,10 +59,10 @@
 <div class="row" id="distinction_medal">
     <div class="col-lg-6" id="container_medal">
         <div id="title_medal">
-            <h1 data-aos="fade-right" data-aos-duration="1200" class="main_title">Médailles</h1>
+            <span id="title_medals" data-aos="fade-right" data-aos-duration="1200" class="main_title">Médailles</span>
             <h2 class="second_title">Les palmarès</h2>
         </div>
-        <p>adipisicing elit. Ad sit, perferendis sequi est aliquid illum reiciendis! Distinctio consectetur, voluptates repellat illo soluta optio officia corrupti repudiandae modi! Eveniet, ad provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti enim quaerat consectetur eligendi mollitia itaque. Cupiditate, tenetur official. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quas iusto accusantium quod? Laudantium.</p>
+        <p>Attaché à l'excellence et à la maîtrise du geste, La « Maison DELAYE « s'investit dans le monde du concours culinaire, synonyme de prestige à travers le monde, pour perpétuer les valeurs des métiers de bouche et le savoir-faire de l’art culinaire français. </p>
     </div>
     <div class="col-lg-6">
         <div class="slider">
@@ -118,7 +118,7 @@
         </div>
         <div id="container_text_actuality" class="col-lg-6">
             <div id="title_actuality">
-                <h1 id="jk1" class="main_title">Les actus</h1>
+                <span id="jk1" class="main_title">Les actus</span>
                 <h2 id="jk2" class="second_title">La maison delaye</h2>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod quidem tempora sed, assumenda, deleniti inventore saepe quisquam dolore architecto delectus quae hic ipsam culpa consequuntur enim doloremque ducimus nisi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus et, quibusdam provident delectus, rem temporibus quam ullam vitae repellendus eum aliquam sed id ad fugiat perferendis ipsa! Eveniet, quasi aut.</p>
@@ -129,10 +129,12 @@
     <div class="row row_card">
         <div class="col-lg-6 container_text_menu">
             <div class="title_card">
-                <h1 class="main_title jk3">De saison</h1>
+                <span class="main_title jk3">De saison</span>
                 <h2 class="second_title jk4">La carte</h2>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod quidem tempora sed, assumenda, deleniti inventore saepe quisquam dolore architecto delectus quae hic ipsam culpa consequuntur enim doloremque ducimus nisi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus et, quibusdam provident delectus, rem temporibus quam ullam vitae repellendus eum aliquam sed id ad fugiat perferendis ipsa! Eveniet, quasi aut.</p>
+            <p>Découvrez la carte de La « Maison DELAYE » : des recettes traditionnelles emblématiques réinterprétées par nos chefs, pour conjuguer tradition et modernisme de la gastronomie française. La maison s’attache à sourcer des matières premières de qualité, sélectionnées chez nos producteurs pour sublimer l’univers de la charcuterie et des mets traiteur : Jambon Blanc primé, Pâté en croûte Richelieu, Choucroute Garnie, Tournedos de Bœuf aux Morilles, Gâteau de Semoule Traditionnel...
+            De la mise en bouche au dessert, en passant par les plats cuisinés, notre carte est un festival de sens autour de l’art culinaire à la française. 
+            </p>
             <div class="separator_menu"></div>
             <a href="{{ path('card') }}"><button type="button" class="btn btn-light btn_menu">Decouvrir</button></a>
         </div>
@@ -144,7 +146,7 @@
 <div id="container_contact">
     <div id="container_contact_opacity">
         <div id="title_contact_homepage">
-            <h1 data-aos="fade-right" data-aos-duration="1200" class="main_title jk5">La boutique</h1>
+            <span data-aos="fade-right" data-aos-duration="1200" class="main_title jk5">La boutique</span>
             <h2 class="second_title jk6">Sceaux</h2>
         </div>
         <div id="container_text_contact">

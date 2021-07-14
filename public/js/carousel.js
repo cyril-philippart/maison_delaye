@@ -109,7 +109,9 @@ function changeIndexToggle(checkboxElem)
 
     changePosition = document.querySelector('.toggler')
     changePosition.style.position = "fixed"
-    
+
+    changeColor = document.querySelector('.hamburger >div')
+		changeColor.style.backgroundColor = 'white';
 	}
   else 
 	{
@@ -123,6 +125,9 @@ function changeIndexToggle(checkboxElem)
     
     changePosition = document.querySelector('.toggler')
     changePosition.style.position = "absolute"
+
+    changeColor = document.querySelector('.hamburger >div')
+		changeColor.style.backgroundColor = '#022168';
 	}
 }
 

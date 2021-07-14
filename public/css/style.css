@@ -12,6 +12,17 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+    color: white;
+    font-family: "de-bambeet";  
+    letter-spacing: 0.3rem;
+    font-size: 3.2rem;
+}
+
+.link_navbar_toggler {
+    color: white;
+}
+
 /*********************************************************************************************************/
 /*                                                                                                       */
 /*                                              HOMEPAGE                                                 */
@@ -101,10 +112,11 @@ nav > ul >li {
 
 .link_navbar {
     text-decoration: none;
-    color: #8a6443;
+    color: #022168;
     transition: color 0.6s ease;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    font-weight: bold;
 }
 
 .link_navbar:hover {
@@ -160,7 +172,7 @@ nav > ul >li {
     position: relative;
     width: 80%;
     height: 11%;
-    background-color: #8a6443;
+    background-color: #022168;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,14 +257,14 @@ nav > ul >li {
     padding-left: 0rem;
 }
 
-#hamburger_overlay #hamburger_menu_activated > div > div >ul > li{
+#hamburger_overlay #hamburger_menu_activated > div > div >ul > li {
     list-style: none;
-    color: #8a6443;
     font-size: 1.2rem;
     padding: 0.5rem;
 }
-#hamburger_overlay #hamburger_menu_activated > div > div >ul > li >a:hover {
-    color : #8a64437c;
+
+#hamburger_overlay #hamburger_menu_activated > div > div >ul > li > a{
+    color: white !important;
 }
 
 /**********************/
@@ -274,15 +286,16 @@ nav > ul >li {
 }
  
 #main_title {
-    color: #8a6443;
+    color: #022168;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
+    font-family: inherit;
 }
 
 #second_title {
     font-size: 1.3rem;
-    color: #8a6443;
+    color: #022168;
 }
 
 #second_title:hover {
@@ -333,7 +346,9 @@ nav > ul >li {
 /******************************/
 
 #section_skills {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 7rem;
     position: relative;
 }
@@ -341,17 +356,19 @@ nav > ul >li {
 #skill {
     font-family:'de-bambeet';
     font-size: 7rem;
-    color: #0221683b;
+    color: #02216821;
     letter-spacing: 0.8rem;
     position: absolute;
-    top: -105%;
-    width: 100%;
+    top: -170%;
+    left: 35%;
 }
 
 #work {
     color: #022168;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
+    font-size: 1.3rem;
+    padding-top: 0.4rem;
 }
 
 #about {
@@ -493,8 +510,14 @@ section > ul {
     margin-bottom: 9rem;
 }
 
-#title_medal {
+#title_medals {
     text-align: center;
+}
+
+#title_medal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #container_medal > p{
@@ -511,15 +534,19 @@ section > ul {
     letter-spacing: 0.8rem;
     position: absolute;
     margin-top: 3rem;
-    width: 50%;
+    width: 34%;
 }
 
 .second_title {
     color: #8a6443;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase; 
-    padding-top: 6rem;
+    padding-top: 4rem;
     font-size: 1.3rem;
+}
+
+#container_medal {
+    padding-top: 5rem;
 }
 
 /***********************/
@@ -591,16 +618,25 @@ section > ul {
 /***********************/
 
 #picture_melissa_delaye {
-    width: 50%;
+    width: 75%;
 }
 
 .row_card,
 #row_actuality {
     text-align: center;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+}
+
+#title_actuality{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #container_text_actuality > p{
-    width: 55%;
+    width: 75%;
     margin: 5rem auto;
     text-align: justify;
 }
@@ -632,7 +668,7 @@ section > ul {
 }
 
 #jk1 {
-    color: #0221683b;
+    color: #02216821;
 }
 
 /***********************/
@@ -642,11 +678,11 @@ section > ul {
 /***********************/
 
 .picture_menu {
-    width: 50%;
+    width: 75%;
 }
 
 .container_text_menu > p{
-    width: 50%;
+    width: 75%;
     margin: 5rem auto;
     text-align: justify;
 }
@@ -665,10 +701,11 @@ section > ul {
 
 .jk4 {
     color: #022168;
+    padding-top: 3rem;
 }
 
 .jk3 {
-    color: #0221683b;
+    color: #02216821;
 }
 
 
@@ -729,7 +766,12 @@ section > ul {
 .jk6{
     color: white;
 }
-
+#title_contact_homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
 #container_text_contact > div > p {
     margin-bottom: 0.2rem;
 }
@@ -744,14 +786,11 @@ section > ul {
 }
 
 .jk5 {
-    margin-top: 6rem;
-    margin-left: 30rem;
     color: rgba(255, 255, 255, 0.25);
 }
 
 .jk6 {
-    padding-top: 9rem;
-    padding-left: 1rem;
+    padding-top: 3rem;
 }
 
 .text_contact{
@@ -804,6 +843,7 @@ footer {
     margin-top: 3rem;
 }
 
+#legal_mention >p,
 #legal_mention > p > a {
     text-decoration: none;
     color: #8a6443;
@@ -841,6 +881,15 @@ footer {
         display: none;
     }
 
+    #skill {
+        left: 15%;
+        top: -130%;
+    }
+
+    #work {
+        padding-top: 0.9rem;
+    }
+
     .main-pos,
     .back-pos {
         margin-left: -5.5em;
@@ -859,11 +908,17 @@ footer {
     }
 
     .main_title {
-        margin-left: 11rem;
+        width: 68%;
+        font-size: 5rem;
+        margin: 3rem 0;
     }
 
     #title_medal > p {
         margin-left:  16rem;
+    }
+
+    .second_title {
+        padding-top: 0;
     }
 
     #container_medal > p {
@@ -904,8 +959,9 @@ footer {
         width: 100%;
     }
 
-    #container_text_actuality > p {
-        margin: 5rem 11em;
+    #container_text_actuality {
+        margin-top: 4rem;
+        padding-top: 0;
     }
 
     #container_picture > img,
@@ -913,46 +969,32 @@ footer {
         margin: 0 ;
     }
 
-    #jk1 {
-        margin-left: 12rem;
-        font-size: 5rem;
-        color: #022168;
-    }
-
     #jk2 {
         padding-left: 0;
         font-size: 1.2rem;
-        padding-top: 5rem;
+        padding-top: 0;
         color: #022168;
-    }
-
-    #btn_actuality {
-        margin-left: 1rem;
     }
 
     .container_picture_menu {
         width: 100%;
         order: -1;
-        text-align:center
+        text-align:center;
+        margin-bottom: 4rem;
     }
+
+    .row_card {
+        margin-top: 6rem;
+    }
+    
 
     .title_card {
         text-align: center;
     }
 
-    .jk3 {
-        margin-left: 12rem;
-        font-size: 5rem;;
-    }
-
     .jk4 {
         padding-left: 0rem;
-        padding-top: 6rem;
-    }
-
-    .container_text_menu > p {
-        width: 57%;
-        margin-left: 10rem;
+        padding-top: 1rem;
     }
 
     .jk5 {
@@ -962,8 +1004,8 @@ footer {
         font-size: 5rem;
     }
 
-    .separator_menu {
-        margin-left: 22rem;
+    .jk6 {
+        padding-top: 4rem;
     }
 
     #main_containter_footer > a > img {
@@ -1022,7 +1064,7 @@ footer {
     }
 
     .second_title {
-        padding-top: 5rem;
+        padding-top: 14%;
     }
 
     #title_medal > p {
@@ -1139,6 +1181,10 @@ footer {
 
 @media screen and (max-width : 576px) {
 
+    #main_title {
+        font-size: 2rem;
+    }
+
     #button_back_top {
         width: 40px;
         height: 40px;
@@ -1183,18 +1229,26 @@ footer {
 
     #skill {
         font-size: 4rem;
-        letter-spacing: 0.4rem;
+        letter-spacing: 0.6rem;
         top: -70%;
+        left: 0;
+        width: 100%;
+        text-align: center;
     }
 
     #work {
-        letter-spacing: 0.2rem;
+        padding-top: 0.5rem;
     }
     
     #about {
         width: 90%;
         text-align: justify;
         margin: 3rem auto;
+    }
+
+    .row_card,
+    #row_actuality {
+        width: 90%;
     }
 
     .separator {
@@ -1267,20 +1321,19 @@ footer {
     .jk3 {
         font-size: 5rem;
         letter-spacing: 0.3rem;
-        width: 98%;
+        width: 87%;
         margin-left: 0;
     }
 
     .second_title,
     #jk2,
     .jk4 {
-        letter-spacing: 0.2rem;
-        padding-top: 5rem;
-        font-size: 1.3rem;
+        padding-top: 0;
+        font-size: 1rem;
     }
 
     .jk4 {
-        padding-top: 6rem;
+        padding-top: 0;
     }
 
     #container_medal > p,
@@ -1310,6 +1363,7 @@ footer {
     #row_actuality {
         margin-top: 6rem;
         text-align: center;
+        margin-bottom: 3rem;
     }
 
     #container_contact {
@@ -1323,11 +1377,12 @@ footer {
 
     .jk5 {
         margin-top: 3.8rem;
-        font-size: 4rem;
+        font-size: 3.5rem;
+        letter-spacing: 0.6rem;
     }
 
     .jk6 {
-        padding-top: 5rem;
+        padding-top: 1rem;
         padding-left: 0 ;
     }
 
@@ -1369,7 +1424,8 @@ footer {
 
 #overlay_background_contact,
 #overlay_background_aboutUs,
-#overlay_background_card{
+#overlay_background_card,
+#overlay_background_actuality {
     background-color: rgba(0, 0, 0, 0.600);
     height: 350px;
     display: flex;
@@ -1379,7 +1435,8 @@ footer {
 
 #title_contact > h2,
 #title_aboutUs > h2,
-#title_page_card >h2 {
+#title_page_card >h2,
+#title_page_actuality >h2 {
     color: white;
     letter-spacing: 0.3rem;
     font-size: 3rem;
@@ -1469,6 +1526,10 @@ footer {
 #btn_contact:hover {
     color: #02216878;
     border-color: #02216878;
+}
+
+#map {
+    height: 600px;
 }
 
 /*****************************/
@@ -1568,16 +1629,11 @@ footer {
     background-image: url(/pictures/photo_devanture.JPG);
     background-size: cover;
     background-position: center;
-    margin-bottom: 5rem;
-}
-
-#main_title_aboutUs {
-    text-align:center ;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 #card_presentation {
-    width: 45%;
+    width: 70%;
     margin: auto;
     align-items: center;
 
@@ -1587,33 +1643,84 @@ footer {
     text-align: center;
 }
 
+.title_card {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
 .img_team > img {
     width: 60%;
 }
 
-#banner_about {
-    height: 350px;
-    width: 70%;
-    margin: 5rem auto ;
-    background-image: url(/pictures/photo_devanture.JPG);
-    background-size: cover;
-    background-position: center;
+#history {
+    padding-top: 4rem;
 }
 
-#banner_overlay_background_aboutUs {
-    background-color: rgba(0, 0, 0, 0.600);
-    height: 350px;
+#jk9 {
+    font-size: 6rem;
+    text-align: center;
+    top: 63%;
+    letter-spacing: 1rem;
+}
+
+#jk10{
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 3rem;
+}
+
+#text_aboutUS > p {
+    text-align: justify;
+    line-height: 20px;
+}
+
+#text_aboutUS > ul {
+    color: #022168;
+    list-style: none;
+}
+
+#banner_about {
+    height: 700px;
+    margin: 5rem auto 28rem ;
+    background-image: url(/pictures/banner_maison.jpg);
+    background-size: cover;
+    background-position: 20% 70%;
+}
+
+#banner_text {
+    margin-bottom: 3rem;
+}
+
+#jk11 {
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    color: #ffffff2b;
+    width: 100%;
+}
+
+#jk13{
+    font-size: 12rem;
+    text-align: center;
+    letter-spacing: 1rem;
+    color: #02216817;
+    width: 100%;
+}
+
+#marg {
+    margin-bottom: 3.5rem;
 }
 
 #slider_comments {
-    width: 70%;
-    margin:auto;
-    height: 200px;
+    background-color: #f9f6f3;
+    height: 450px;
 }
 
 #quote {
     text-align: center;
     margin-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 #quote > img {
@@ -1666,17 +1773,111 @@ footer {
 }
 
 #about_porcelet_rose {
-    width: 70%;
+    width: 60%;
     margin: auto;
     text-align: center;
     margin-bottom: 5rem;
+    background-color: #272a4c;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 35rem;
 }
 
-#about_porcelet_rose > h2 {
-    font-family: "de-bambeet";  
-    letter-spacing: 0.2rem;
+
+#about_porcelet_rose > p {
+    color: white;
+    padding: 0 4rem;
 }
 
+#title_banner_about {
+    font-family: inherit;  
+    letter-spacing: 0.1rem;
+    color: #ffffffb8;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    margin-top: 5rem;
+}
+
+#jk12 {
+    padding-top: 6rem;
+}
+/******************************/
+/*                            */
+/*    Responsive tablette     */
+/*                            */
+/******************************/
+@media screen and (max-width : 768px) {
+    #card_presentation {
+        width: 80%;
+    }
+    
+    #first_img {
+        order: 1;
+    }
+
+    #jk9 {
+        top: 56%;
+    }
+
+    #jk10{
+        padding-top: 1rem;
+    }
+
+    #jk12 {
+        padding-top: 4rem;
+    }
+
+    .img_team {
+        width: 50%;
+        padding: 0;
+    }
+
+    .img_team > img {
+        width: 85%;
+    }
+
+    #banner_about {
+        height: 450px;
+        margin: 5rem auto 37rem;
+    }
+
+    #about_porcelet_rose {
+        margin-top: 24rem;
+        width: 80%;
+    }
+
+    #title_banner_about {
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+    }
+
+    #banner_text {
+        margin-bottom: 1rem;
+    }
+
+    #slider_comments {
+        height: 540px;
+    }
+
+    @keyframes anim-1 {
+        0%, 8.3% { left: -50%; opacity: 0; }
+        8.3%,25% { left: 25%; opacity: 1; }
+        33.33%, 100% { left: 50%; opacity: 0; }
+    }
+    
+    @keyframes anim-2 {
+        0%, 33.33% { left: -50%; opacity: 0; }
+        41.63%, 58.29% { left: 25%; opacity: 1; }
+        66.66%, 100% { left: 50%; opacity: 0; }
+    }
+    
+    @keyframes anim-3 {
+        0%, 66.66% { left: -50%; opacity: 0; }
+        74.96%, 91.62% { left: 25%; opacity: 1; }
+        100% { left: 50%; opacity: 0; }
+    }
+}
 /******************************/
 /*                            */
 /*    Responsive téléphone    */
@@ -1694,12 +1895,57 @@ footer {
     }
 
     #card_presentation,
-    #banner_about,
     #about_porcelet_rose {
-        width: 90%;
+        width: 90% !important;
+    }
+    
+    #jk9 {
+        font-size: 3rem;
+        top: 55%;
     }
 
-    
+    #jk10 {
+        font-size: 1rem;
+    }
+
+    #jk11 {
+        font-size: 2rem;
+    }
+
+    #jk12 {
+        padding-top: 3rem;
+    }
+
+    #title_banner_about {
+        font-size: 1rem;
+        margin-top: 3rem;
+    }
+
+    #banner_text {
+        margin-bottom: 0rem;
+    }
+
+    #banner_about {
+        margin: 5rem auto 30rem;
+    }
+
+    #marg {
+        margin-bottom: 1.5rem;
+    }
+
+    #quote {
+        margin-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    #about_porcelet_rose > p {
+        padding: 0 1rem;
+        font-size: 0.8rem;
+    }
+
+    #jk13 {
+        font-size: 5rem;
+    }
 
     #text_aboutUS {
         margin-bottom: 2rem;
@@ -1727,59 +1973,11 @@ footer {
     #item2, 
     #item3 {
         width: 70%;
+        font-size: 0.9rem;
     }
     
     #slider_comments {
         height: 400px;
-    }
-}
-/******************************/
-/*                            */
-/*    Responsive téléphone    */
-/*                            */
-/******************************/
-@media screen and (max-width : 768px) {
-    #card_presentation {
-        width: 70%;
-    }
-    
-    #first_img {
-        order: 1;
-    }
-
-    .img_team {
-        width: 50%;
-        padding: 0;
-    }
-
-    .img_team > img {
-        width: 85%;
-    }
-
-    #banner_about {
-        width: 85%;
-    }
-
-    #slider_comments {
-        height: 280px;
-    }
-
-    @keyframes anim-1 {
-        0%, 8.3% { left: -50%; opacity: 0; }
-        8.3%,25% { left: 25%; opacity: 1; }
-        33.33%, 100% { left: 50%; opacity: 0; }
-    }
-    
-    @keyframes anim-2 {
-        0%, 33.33% { left: -50%; opacity: 0; }
-        41.63%, 58.29% { left: 25%; opacity: 1; }
-        66.66%, 100% { left: 50%; opacity: 0; }
-    }
-    
-    @keyframes anim-3 {
-        0%, 66.66% { left: -50%; opacity: 0; }
-        74.96%, 91.62% { left: 25%; opacity: 1; }
-        100% { left: 50%; opacity: 0; }
     }
 }
 
@@ -1807,6 +2005,10 @@ footer {
 
 .title_special_card {
     text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
 }
 
 #overlay_special_card{
@@ -1817,32 +2019,34 @@ footer {
 .aside_special_card {
     color: white;
     width: 35%;
-    margin: 8rem auto ;
+    margin: 6rem auto ;
 }
 
 .comming_soon {
     border: 2px solid white;
-    width: 34%;
-    padding: 0.5rem 2rem;
+    width: 27%;
+    padding: 0.5rem 1.5rem;
     margin: auto;
+}
+
+#container_places_contact_card {
+    border-left: 2px #022168 solid;
+    border-right: 2px #022168 solid;
 }
 
 .comming_soon > p {
     color: white;
     margin: 0;
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     letter-spacing: 0.2rem;
-}
-
-#align {
-    margin-left: 30rem;
 }
 
 .container_command > h3 {
     text-transform: uppercase;
     color: #022168;
     margin: 2rem 0;
+    font-size: 1.1rem;
 }
 
 .container_command > p > a {
@@ -1851,7 +2055,8 @@ footer {
 }
 
 #row_command {
-    margin: 10rem 0;
+    width: 60%;
+    margin: 10rem auto;
 }
 
 #row_command > div {
@@ -1875,6 +2080,7 @@ footer {
     grid-template-columns: repeat(6, 1fr);
     max-width: 100%;
     grid-auto-rows: minmax(100px, auto);
+    margin-bottom: -5rem;
 }
 
 .img_1 {
@@ -1910,4 +2116,153 @@ footer {
 .img_service {
     margin-bottom: 8rem;
     margin-top: 3rem;
+}
+
+/*****************************/
+/*                           */
+/*    Responsive tablette    */
+/*                           */
+/*****************************/
+
+@media screen and (max-width : 768px) {
+    .aside_special_card,
+    .comming_soon {
+        width: 67%;
+    }
+
+    #align {
+        margin: 3rem 0;
+        width: 100%;
+    }
+
+    #container_places_contact,
+    #container_command_payment,
+    #container_places_contact_card {
+        border:none;
+    }
+
+    #row_command > div {
+        margin-bottom: 3rem;
+    }
+
+    #row_command {
+        margin: 5rem auto;
+    }
+
+    .img_service > img {
+        width: 32%;
+    }
+
+    .mosaic_img {
+        grid-auto-rows: minmax(70px, auto);
+    }
+}
+
+/******************************/
+/*                            */
+/*    Responsive téléphone    */
+/*                            */
+/******************************/
+
+@media screen and (max-width : 576px) {
+    #overlay_special_card,
+    #special_card {
+        height: 500px;
+        margin: 4rem 0;
+    }
+
+    .aside_special_card {
+        margin: 4rem auto;
+    }
+
+    .aside_special_card,
+    .comming_soon {
+        width: 96%;
+        text-align: center;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.9em;
+    }
+
+    #align {
+        margin: 3.5rem 0;
+        font-size: 4rem;
+    }
+
+    .row_card {
+        margin-top: 0;
+    }
+
+    .container_command > h3 {
+        margin: 0.5rem 0;
+    }
+
+    #row_command > div {
+        margin-bottom: 1.5rem;
+    }
+
+    .title_services {
+        margin-top: -2rem;
+    }
+
+    .title_services > img {
+        width: 100%;
+    }
+
+    .img_service > img {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .img_service {
+        margin-bottom: 5rem;
+    }
+
+    .mosaic_img {
+        grid-auto-rows: minmax(35px, auto);
+    }
+}
+
+/**************************************************************************************************************/
+/*                                                                                                            */
+/*                                              PAGE ACTUALITE                                                */
+/*                                                                                                            */
+/**************************************************************************************************************/
+
+#background_actuality {
+    height: 350px;
+    background-image: url(/pictures/photo_banniere_carte.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5rem;
+}
+
+#container_actuality {
+    width: 60%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#jk7 {
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    margin-top: 3rem;
+    text-align: center;
+    width: 19%;
+}
+
+#jk8 {
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    padding-top: 3.8rem;
+}
+
+.aside_actuality {
+    text-align: justify;
+    width: 80%;
+    margin: 3rem auto; 
+}
+
+.card {
+    border:none;
 }

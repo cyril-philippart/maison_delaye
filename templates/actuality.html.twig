@@ -4,8 +4,49 @@
 
 {% block body %}
 {% include "layout/navBar.html.twig" %}
-<div class="row row-cols-1 row-cols-md-3">
-
+<div id="background_actuality">
+    <div id="overlay_background_actuality">
+        <div id="title_page_actuality">
+            <h1>Nos Actualités</h1>
+        </div>
+    </div>
+</div>
+<div id="container_actuality" class="row">
+    <div class="col-4">
+        <div class="title_card">
+            <span data-aos="fade-right" data-aos-duration="1200" id="jk7" class="main_title jk3">Incontournable</span>
+            <h2 id="jk8" class="second_title jk4">Les actualités</h2>
+        </div>
+        <p class="aside_actuality" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti, deserunt est iusto sunt quidem quos aperiam eveniet. Fuga ut dolore officiis corporis modi eligendi eos dolor nesciunt soluta accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatum dignissimos repudiandae quia impedit exercitationem atque cupiditate et adipisci, cumque tenetur corrupti minima nesciunt nulla commodi nihil reiciendis ipsum fugit?</p>
+    </div>
+    <div class="col-8 mt-4">
+         <div class="card mb-4">
+            <div class="row g-0">
+                <div class="col-md-4">
+                   <img src="{{ asset('/pictures/photo_menu.jpg') }}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                   <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                   </div>
+                </div>
+             </div>
+        </div>
+        <div class="card mb-4">
+            <div class="row g-0">
+                <div class="col-md-4">
+                <img src="{{ asset('/pictures/photo_menu.jpg') }}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 {% endblock %}

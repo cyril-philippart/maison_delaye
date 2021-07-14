@@ -1,9 +1,10 @@
 $("#card_main_img").vegas({
     slides: [
-        { src: "/pictures/testimage.jpg" },
-        { src: "/pictures/photo_menu.jpg" },
-        { src: "/pictures/photo_melissa.jpg" },
-        { src: "/pictures/photo_devanture.jpg" }
+        { src: "/pictures/accueil1.jpg" },
+        { src: "/pictures/accueil2.jpg" },
+        { src: "/pictures/accueil3.jpg" },
+        { src: "/pictures/accueil4.jpg" },
+        { src: "/pictures/accueil5.jpg" }
     ],
   
     overlay: true,
@@ -54,7 +55,7 @@ $(".img_3").vegas({
     overlay: true,
       transition: 'fade',
       transitionDuration: '1000',
-      delay: '7000',
+      delay: '5000',
       animation: 'random',
       animationDuration: '7000'
 });
@@ -69,7 +70,7 @@ $(".img_4").vegas({
     overlay: true,
       transition: 'fade',
       transitionDuration: '1000',
-      delay: '7000',
+      delay: '3000',
       animation: 'random',
       animationDuration: '7000'
 });
@@ -84,7 +85,7 @@ $(".img_5").vegas({
     overlay: true,
       transition: 'fade',
       transitionDuration: '1000',
-      delay: '7000',
+      delay: '7500',
       animation: 'random',
       animationDuration: '7000'
 });
@@ -99,7 +100,7 @@ $(".img_6").vegas({
     overlay: true,
       transition: 'fade',
       transitionDuration: '1000',
-      delay: '10000',
+      delay: '9000',
       animation: 'random',
       animationDuration: '10000'
 });
