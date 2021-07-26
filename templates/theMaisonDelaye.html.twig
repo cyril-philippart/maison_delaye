@@ -17,27 +17,29 @@
     </div>
     <div id="card_presentation" class="row row-cols-1 row-cols-lg-3">
         <div id="first_img" class="col img_team">
-            <img src="{{ asset('/pictures/photo_melissa.jpg') }}" alt="">
+            <img data-aos="fade-right" data-aos-duration="1200" src="{{ asset('/pictures/photo_melissa.jpg') }}" alt="">
         </div>
         <div id="text_aboutUS" class="col">
+            <input type="checkbox" onchange="ChangeTextBaliseMore(this)" class="read-more-state" id="post-1">
             <p>Mélissa et Benjamin charcutiers de formation vibrent au même son : celui de la gastronomie traditionnelle française.</p>   
             <p>C’est en couple que ces passionnés de charcuterie vivent leur aventure Scéenne et qu’ils décident de relancer l'institution ‘’Au Porcelet Rose’, rebaptisée la « Maison DELAYE ». 
             Formés par Pascal Joly (charcutier Meilleur Ouvrier de France) et Eric Pellé à l’Ecole d’Art Culinaire « Grégoire Ferrandi », Mélissa et Benjamin persévèrent à l’Ecole des Charcutiers de Paris, puis décident en 2012 de prendre leur envol toujours ensemble, en reprenant les rênes d’une charcuterie vieille de 100 ans à Courbevoie. </p>
             <p>Après 4 années d'expérience, ce tandem audacieux se lance le défi d’une vie : redonner souffle à l'Institution “Au Porcelet Rose” à Sceaux. 
             Entourés de leurs équipes où règnent rigueur et professionnalisme, l’univers de la « Maison DELAYE » s’attache à l’authenticité du goût et à la technique, grâce à des matières premières sélectionnées ; l’expérience gustative autour de la tradition culinaire française toujours mise en avant.</p>
             <p>Attachés à l'excellence et à la maîtrise technique du métier, Melissa et Benjamin sont passionnés par le challenge. Ils s’investissent dans la préparation des concours culinaires et en remportent de nombreux. Leur palmarès est à leur image :</p>
-            <ul>
+            <ul class="multi-collapse collapse">
                 <li>Médaille d’argent de la meilleure choucroute 2015.</li>
                 <li>Médaille d’or du fromage de tête en 2015 et 2016.</li>
                 <li>Médaille d’or du jambon blanc de Paris 2016.</li>
                 <li>Médaille d’or du pâté de foie 2017.</li>
                 <li>Meilleure apprentie de France en 2008 à Poitiers obtenu par Melissa Delaye.</li>
             </ul>
-            <p>Il n’y a pas d’art sans passion, il n’y a pas de créativité sans rigueur, il n’y a pas de réussite sans dépassement de soi.
+            <p class="multi-collapse collapse">Il n’y a pas d’art sans passion, il n’y a pas de créativité sans rigueur, il n’y a pas de réussite sans dépassement de soi.
             Mélissa et Benjamin, c’est la rencontre de deux passionnés, un artiste et sa muse qui subliment la charcuterie pour la porter au plus haut rang de la gastronomie française.</p>
+            <label class="read-more-button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" for="post-1">Voir plus</label>  
         </div>
         <div class="col img_team">
-            <img src="{{ asset('/pictures/photo_melissa.jpg') }}" alt="">
+            <img data-aos="fade-left" data-aos-duration="1200" src="{{ asset('/pictures/photo_melissa.jpg') }}" alt="">
         </div>
     </div>
     <div id="banner_about">
@@ -53,8 +55,8 @@
             Entre art et artisanat, les portes de La « Maison DELAYE « s’ouvrent sur le monde de la gastronomie et de l’art de vivre à la Française.</p>    
         </div>
     </div>
-    <div id="slider_comments">
-        <div id="quote"><img src="{{ asset('/pictures/quote.png') }}" alt=""></div>
+    <div class="slider_comments">
+        <div class="quote"><img src="{{ asset('/pictures/quote.png') }}" alt=""></div>
         <div class="title_card">
             <span data-aos="fade-right" data-aos-duration="1200" id="jk13" class="main_title jk3">Vos avis</span>
             <h2 id="jk12" class="second_title jk4">Ils parlent de nous</h2>

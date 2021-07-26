@@ -131,6 +131,18 @@ function changeIndexToggle(checkboxElem)
 	}
 }
 
+function ChangeTextBaliseMore(chekboxElement) {
+    if(chekboxElement.checked) {
+        let change_text = document.querySelector('.read-more-button');
+        change_text.innerHTML = 'Voir moins';
+        
+    };
+    if(! chekboxElement.checked) {
+        let change_text = document.querySelector('.read-more-button');
+        change_text.innerHTML = 'Voir plus';
+    };
+}
+            
 $(window).scroll(function(){
   var scrollPos = $(this).scrollTop() / 22;
 

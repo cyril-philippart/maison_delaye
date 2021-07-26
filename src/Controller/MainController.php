@@ -43,11 +43,21 @@ class MainController extends AbstractController
     }
 
     /**
-     * @Route("/les-actualités-de-la-maison-delaye", name="actuality")
+     * @Route("/les-actualites-de-la-maison-delaye", name="actuality")
      */
     public function actuality(): Response
     {
         return $this->render('actuality.html.twig', [
+
+        ]);
+    }
+
+    /**
+     * @Route("/mentions-legales", name="legalMention")
+     */
+    public function legalMention(): Response
+    {
+        return $this->render('legalMention.html.twig', [
 
         ]);
     }
