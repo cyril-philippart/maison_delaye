@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="DESCRIPTION" />
+        <meta name="description" content="La Maison Delaye, charcuterie située rue Houdan à Sceaux, propose des produits charcutiers et des mets traiteurs issus du savoir-faire français. Anciennement baptisé “Au Porcelet Rose”, La Maison Delaye est une véritable institution pour les amateurs de charcuterie : pâté en croûte, saucisson, terrine, fromage de tête, pâté de foie… La Maison Delaye vous propose également un large choix de mets allant de la mise en bouche au dessert en passant par ses incontournables plats cuisinés comme sa traditionnelle choucroute médaillée, son koulibiac de saumon ou encore son gâteau de semoule."/>
         <title>{% block title %}Maison DELAYE{% endblock %}</title>
         {% block stylesheets %}
             <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -22,9 +22,9 @@
         <div id="main_containter_footer">
             <a href="{{ path('homepage') }}"><img src="{{ asset('/pictures/logo-maison-delaye.png') | imagine_filter('logo_delaye') }}" alt="logo_Maison_Delaye"></a>
             <div id="icons_social_media">
-                <a href="https://www.facebook.com/maisondelaye" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/maisondelaye_officiel/" target="_blank"><i id="fab" class="fab fa-instagram"></i></a>
-                <a href="mailto:contact@maisondelaye.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.facebook.com/maisondelaye" target="_blank"><img class="picto_footer" src="{{ asset('/pictures/picto_facebook.png') }}" alt="page facebook maison delaye"></a>
+                <a href="https://www.instagram.com/maisondelaye_officiel/" target="_blank"><img id="insta" class="picto_footer" src="{{ asset('/pictures/picto_instagram.png') }}" alt="instagram maison delaye"></a>
+                <a href="mailto:contact@maisondelaye.com" target="_blank"><img class="picto_footer" src="{{ asset('/pictures/picto_mail.png') }}" alt="contacter maison delaye"></a>
             </div>
             <div id="legal_mention">
                 <p>© 2021 maisondelaye.com | <a href="{{ path('legalMention') }}">mentions légales</a></p>
@@ -47,5 +47,14 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP9MlyrdjfDe3BPr-WzlIJsVmezFGCAvc&callback=initMap&libraries=&v=weekly"
       async
     ></script>
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    <script type="text/javascript">
+        var userFeed = new Instafeed({
+            target: "instafeed-container",
+            accessToken: 'IGQVJWNmJxUDhLTFo2NG5GMnhkS1RUWTZAuXzdJUlFEU2cwVG9BTVh1eUdmQ2ZAmYTJZAenMtSVF4MllhdHZAUaFUycmxwSXJKMEdCQVc1eDlrX3hSVjJ4OVFVblRkMFFCTTRSUUU5MkFXaTlRVThsekVsUgZDZD'
+        });
+        userFeed.run();
+	</script>
+    <script type="text/javascript" src="//cookie.eurowebpage.com/cookie.js?skin=cookielaw1&amp;msg=En%20poursuivant%20votre%20navigation%20sur%20ce%20site%2C%20vous%20acceptez%20l'utilisation%20de%20Cookies%20dans%20le%20but%20d'am%C3%A9liorer%20votre%20exp%C3%A9rience.&amp;learnmore=Politique%20de%20confidentialit%C3%A9&amp;link_color=7c7c7c&amp;morelink=http%3A%2F%2Flocalhost%3A8080%2Fuploads%2Fpolitique_Cookies_MAISON_DELAYE.pdf&amp;accept_radius=5&amp;accept_background=ffffff"></script>
     </body>
 </html>

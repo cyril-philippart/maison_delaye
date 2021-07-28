@@ -286,7 +286,7 @@ nav > ul >li {
 
 #hamburger_overlay #hamburger_menu_activated > div > div >ul > li {
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.5rem;
 }
 
@@ -822,28 +822,16 @@ footer {
     margin-top: 2rem;
 }
 
+.picto_footer {
+    width: 23px;
+}
+
+#insta {
+    margin: 0 10px;
+}
+
 #icons_social_media {
-    margin: 1rem auto ;
-
-}
-
-#icons_social_media > a > i {
-    font-size: 1.5rem;
-}
-
-#icons_social_media > a {
-    text-decoration: none;
-    transition: color 0.2s ease;
-    color: #8a6443;
-}
-
-#icons_social_media > a:hover {
-    transition: color 0.2s ease;
-    color: #8a64437c  ;
-}
-
-#fab {
-    margin-left: 0.5rem;
+    margin-top: 20px;
 }
 
 #legal_mention {
@@ -1039,7 +1027,7 @@ footer {
 @media screen and (max-width : 576px) {
 
     #main_title {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     #button_back_top {
@@ -1236,7 +1224,7 @@ footer {
 
     .jk5 {
         margin-top: 3.8rem;
-        font-size: 3.5rem;
+        font-size: 3rem;
         letter-spacing: 0.6rem;
     }
 
@@ -1472,6 +1460,7 @@ footer {
 
     #map {
         height: 300px;
+        width: 95%;
     }
 
     .col-md-2 {
@@ -1781,7 +1770,7 @@ footer {
     
     #jk9 {
         font-size: 3rem;
-        top: 55%;
+        top: 71%;
     }
 
     #jk10 {
@@ -1974,7 +1963,7 @@ footer {
 
 .img_2 {
     grid-column: 2/4;
-    grid-row: 1/8; 
+    grid-row: 1/5; 
 }
 
 .img_3 {
@@ -2086,15 +2075,19 @@ footer {
     }
 
     .aside_special_card {
-        margin: 4rem auto;
+        margin: 2rem auto;
     }
 
     .aside_special_card,
     .comming_soon {
         width: 96%;
-        text-align: center;
+        text-align: justify;
         padding: 0.5rem 0.5rem;
         font-size: 0.9em;
+    }
+
+    .comming_soon {
+        text-align: center;
     }
 
     #align {
@@ -2163,12 +2156,16 @@ footer {
     margin: 0.5rem;
 }
 
+#pate_en_croute {
+    object-position: 32%;
+}
+
 .actu_1 {
     grid-column: 1/2;
     grid-row: 1/5;
-    background-color: #022168;
+    background-image: url(/pictures/fond_bleu_2.jpg);
+    background-size: cover;
 }
-
 
 .actu_2 {
     grid-column: 2/2;
@@ -2178,7 +2175,8 @@ footer {
 
 .actu_3 {
     grid-row: 1/4;
-    background-color: black;
+    background-image: url(/pictures/Fond_beige.jpg);
+    background-size: cover;
 }
 
 .actu_4 {
@@ -2189,7 +2187,8 @@ footer {
 .actu_5 {
     grid-column: 2/2;
     grid-row: 11/8;
-    background-color: rgb(175, 175, 175);
+    background-image: url(/pictures/fond_bleu_2.jpg);
+    background-size: cover;
 }
 
 .actu_6 {
@@ -2246,11 +2245,29 @@ footer {
     background: rgba(0,0,0,1);
 }
 
+#hover_image {
+    background-image: url(/pictures/Fond_bleu_2.jpg);
+    background-size: cover;
+}
+
 .text > a > h2,
 .text > a > p,
 .text > h2,
-.text > p {
+.text > p,
+.text > aside,
+.text > a > aside {
     color: white !important;
+}
+
+.title_actu {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.aside_actu {
+    line-height: 16px;
+    margin-bottom: 18px;
 }
 
 .link_actu {
@@ -2280,6 +2297,10 @@ footer {
 
 #margin_container {
     margin-top: 8rem;
+}
+
+#image_medal {
+    object-fit: scale-down;
 }
 
 /*****************************/
@@ -2396,7 +2417,7 @@ footer {
     }
 
     #legal_mention {
-        margin-top: -1rem;
+        margin-top: 2rem;
     }
 
     #title_medal > p {
@@ -2496,7 +2517,7 @@ footer {
     }
 
     #main_containter_footer > a > img {
-        width: 20%;
+        width: 15%;
     }
 
     #fab {

@@ -17,14 +17,14 @@ $("#card_main_img").vegas({
 
 $(".img_1").vegas({
     slides: [
-        { src: "/uploads/pictures_products/1.jpg" },
-        { src: "/uploads/pictures_products/2.jpg" },
-        { src: "/uploads/pictures_products/3.jpg" }
+        { src: "/pictures/slider_image_page_carte/bloc_1_img1.jpg" },
+        { src: "/pictures/slider_image_page_carte/bloc_1_img2.jpg" },
+        { src: "/pictures/slider_image_page_carte/bloc_1_img3.jpg" }
     ],
   
     overlay: true,
       transition: 'fade',
-      transitionDuration: '1000',
+      transitionDuration: '2000',
       delay: '10000',
       animation: 'random',
       animationDuration: '10000'
@@ -32,76 +32,76 @@ $(".img_1").vegas({
 
 $(".img_2").vegas({
     slides: [
-        { src: "/pictures/plat 1.jpg" },
-        { src: "/pictures/plat 2.jpg" },
-        { src: "/pictures/plat 3.jpg" }
+        { src: "/pictures/slider_image_page_carte/bloc_2_img1.jpg" },
+        { src: "/pictures/slider_image_page_carte/bloc_2_img2.jpg" },
+        { src: "/pictures/slider_image_page_carte/bloc_2_img3.jpg" }
     ],
   
     overlay: true,
       transition: 'fade',
-      transitionDuration: '1000',
-      delay: '7000',
+      transitionDuration: '2000',
+      delay: '12000',
       animation: 'random',
-      animationDuration: '7000'
+      animationDuration: '12000'
 });
 
 $(".img_3").vegas({
     slides: [
-        { src: "/pictures/plat 1.jpg" },
-        { src: "/pictures/plat 2.jpg" },
-        { src: "/pictures/plat 3.jpg" }
+        { src: "/pictures/slider_image_page_carte/bloc_3_img1.jpg" },
+        { src: "/pictures/slider_image_page_carte/bloc_3_img2.jpg" },
+        { src: "/pictures/slider_image_page_carte/bloc_3_img3.jpg" }
     ],
   
     overlay: true,
       transition: 'fade',
-      transitionDuration: '1000',
-      delay: '5000',
+      transitionDuration: '2000',
+      delay: '9000',
       animation: 'random',
-      animationDuration: '7000'
+      animationDuration: '9000'
 });
 
 $(".img_4").vegas({
     slides: [
-        { src: "/pictures/plats 1.jpg" },
-        { src: "/pictures/plats 3.jpg" },
-        { src: "/pictures/plats 4.jpg" }
+        { src: "/pictures/slider_image_page_carte/bloc_4_img1.jpg" },
+        { src: "/pictures/slider_image_page_carte/bloc_4_img2.jpg" },
+        { src: "/pictures/slider_image_page_carte/bloc_4_img3.jpg" }
     ],
   
     overlay: true,
       transition: 'fade',
-      transitionDuration: '1000',
-      delay: '3000',
+      transitionDuration: '2000',
+      delay: '11000',
       animation: 'random',
-      animationDuration: '7000'
+      animationDuration: '11000'
 });
 
 $(".img_5").vegas({
     slides: [
-        { src: "/pictures/plats 1.jpg" },
-        { src: "/pictures/plats 3.jpg" },
-        { src: "/pictures/plats 4.jpg" }
+        { src: "/pictures/slider_image_page_carte/bloc_5_img1.jpg" },
+        { src: "/pictures/slider_image_page_carte/bloc_5_img2.jpg" },
+        { src: "/pictures/slider_image_page_carte/bloc_5_img3.jpg" }
     ],
   
     overlay: true,
       transition: 'fade',
-      transitionDuration: '1000',
-      delay: '7500',
+      transitionDuration: '2000',
+      delay: '13000',
       animation: 'random',
-      animationDuration: '7000'
+      animationDuration: '13000'
 });
 
 $(".img_6").vegas({
     slides: [
-        { src: "/uploads/pictures_products/1.jpg" },
-        { src: "/uploads/pictures_products/2.jpg" },
-        { src: "/uploads/pictures_products/3.jpg" }
+        { src: "/pictures/slider_image_page_carte/bloc_6_img1.jpg" },
+        { src: "/pictures/slider_image_page_carte/bloc_6_img2.jpg" },
+        { src: "/pictures/slider_image_page_carte/bloc_6_img3.jpg" }
     ],
   
     overlay: true,
       transition: 'fade',
-      transitionDuration: '1000',
-      delay: '9000',
+      transitionDuration: '2000',
+      delay: '8000',
       animation: 'random',
-      animationDuration: '10000'
+      animationDuration: '8000'
 });
  
