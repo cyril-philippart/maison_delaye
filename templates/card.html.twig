@@ -17,12 +17,13 @@
                 <span data-aos="fade-right" data-aos-duration="1200" class="main_title jk3">De saison</span>
                 <h2 class="second_title jk4">La carte</h2>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod quidem tempora sed, assumenda, deleniti inventore saepe quisquam dolore architecto delectus quae hic ipsam culpa consequuntur enim doloremque ducimus nisi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus et, quibusdam provident delectus, rem temporibus quam ullam vitae repellendus eum aliquam sed id ad fugiat perferendis ipsa! Eveniet, quasi aut.</p>
+            <p>Découvrez la carte de La « Maison DELAYE » : des recettes traditionnelles emblématiques réinterprétées par nos chefs, pour conjuguer tradition et modernisme de la gastronomie française. La maison s’attache à sourcer des matières premières de qualité, sélectionnées chez nos producteurs pour sublimer l’univers de la charcuterie et des mets traiteur : Jambon Blanc primé, Pâté en croûte Richelieu, Choucroute Garnie, Tournedos de Bœuf aux Morilles, Gâteau de Semoule Traditionnel...
+            De la mise en bouche au dessert, en passant par les plats cuisinés, notre carte est un festival de sens autour de l’art culinaire à la française. </p>
             <div class="separator_menu"></div>
-            <a href="{{ path('card') }}"><button type="button" class="btn btn-light btn_menu">Decouvrir</button></a>
+            <a target="_blank" href="/uploads/Maison_Delaye_LA_CARTE.pdf"><button type="button" class="btn btn-light btn_menu">Decouvrir</button></a>
         </div>
         <div class="col-lg-6 container_picture_menu">
-            <img data-aos="fade-left" data-aos-duration="1200" class="img-fluid picture_menu" src="{{ asset('/pictures/photo_menu.jpg') | imagine_filter('image_section_3') }}" alt="">
+            <img data-aos="fade-left" data-aos-duration="1200" class="img-fluid picture_menu" src="{{ asset('/pictures/photo_menu.jpg') | imagine_filter('image_section_3') }}" alt="la carte traiteur et charcuterie">
         </div>
     </div>
     <div id="special_card">
@@ -45,28 +46,28 @@
         <div id="row_command" class="row row-cols-1 row-cols-md-2 row-cols-xl-4 row_contact">
             <div class="col">
                 <div class="container_command">
-                    <img src="{{ asset('/pictures/boutique_icone.png') }}" alt="">
+                    <img src="{{ asset('/pictures/boutique_icone.png') }}" alt="photo icone boutique">
                     <h3>En boutique</h3>
                     <p>Passez commande en boutique pendant les heures d'ouverture habituelles</p>
                 </div>
             </div>
             <div id="container_places_contact_card" class="col">
                 <div class="container_command">
-                    <img src="{{ asset('/pictures/téléphone_icone.png') }}" alt="">
+                    <img src="{{ asset('/pictures/téléphone_icone.png') }}" alt="photo icone ntéléphone">
                     <h3>A distance</h3>
                     <p id="no_margin">Passez commande par téléphone au 01 46 61 01 71 ou par mail à <a href="mailto:contact@maisondelaye.com" target="_blank"> contact@maisondelaye.com</a></p>
                 </div>
             </div>
             <div id="container_command_payment" class="col">
                 <div class="container_command">
-                    <img src="{{ asset('/pictures/paiement_icone.png') }}" alt="">
+                    <img src="{{ asset('/pictures/paiement_icone.png') }}" alt="photo icone paiement">
                     <h3>Paiement</h3>
                     <p>Réglez vos commandes en magasin ou par téléphone et recevez directement vos mets</p>
                 </div>
             </div>
             <div class="col">
                 <div class="container_command">
-                    <img src="{{ asset('/pictures/collect_icone.png') }}" alt="">
+                    <img src="{{ asset('/pictures/collect_icone.png') }}" alt="photo icone clickandcollect">
                     <h3>Collect</h3>
                     <p>Vous vous presentez à la caisse pour récuperer votre commande le jour J sans attente</p>
                 </div>
@@ -75,12 +76,12 @@
     </div>
     <div class="services">
         <div class="title_services">
-            <h2>Nos Service</h2>
-            <img src="{{ asset('/pictures/design_services.png') }}" alt="">
+            <h2>Nos Services</h2>
+            <img src="{{ asset('/pictures/design_services.png') }}" alt="photo transition">
             <div class="img_service">
-                <img src="{{ asset('/pictures/location.png') }}" alt="">
-                <img src="{{ asset('/pictures/maitre hotel.png') }}" alt="">
-                <img src="{{ asset('/pictures/livraison.png') }}" alt="">
+                <img id ="service_left" src="{{ asset('/pictures/location.jpg') }}" alt="location de materiel">
+                <img id ="service_center"src="{{ asset('/pictures/maitre_hotel.jpg') }}" alt="prestation de maitre d'hotel">
+                <img id ="service_right" src="{{ asset('/pictures/livraison.jpg') }}" alt="livraison de repas à domicile">
             </div>
         </div>
     </div>

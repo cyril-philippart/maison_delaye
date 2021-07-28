@@ -7,13 +7,13 @@
    {% include "layout/navBar.html.twig" %}
     <div id="container_main_title">
         <h1 id="main_title">De l'art et du cochon</h2>
-        <a id="second_title" href="{{ path('card') }}"><span>Voir notre carte</span><i class="fas fa-chevron-right"></i></a>
+        <a id="second_title" target="_blank" href="/uploads/Maison_Delaye_LA_CARTE.pdf">Notre carte</a>
     </div>
 </div>
 <div id="container_skills" >
 <div class="vertical_item">
     <div class="separator_vertical"></div>
-    <img id="logo_grey" src="{{ asset('pictures/logo_gris.jpg')| imagine_filter('logo_grey') }}" alt="">
+    <img id="logo_grey" src="{{ asset('pictures/logo_gris.jpg')| imagine_filter('logo_grey') }}" alt="logo maison delaye">
 </div>
     <div id="section_skills">
         <span data-aos="fade-right" data-aos-duration="1200" id="skill">Savoir-faire</span>
@@ -26,25 +26,25 @@
     <section>
         <ul class="carousel">
             <li class="items main-pos" id="1">
-                <img class="picture_product" src="{{ asset('/uploads/pictures_products/1.jpg') | imagine_filter('image_Products') }}" />
+                <img class="picture_product" src="{{ asset('/uploads/pictures_products/1.jpg') | imagine_filter('image_Products') }}" alt="koulibiac au saumon" />
             </li>
             <li class="items right-pos" id="2">
-                <img class="picture_product" src="{{ asset('/uploads/pictures_products/2.jpg') | imagine_filter('image_Products') }}" />
+                <img class="picture_product" src="{{ asset('/uploads/pictures_products/2.jpg') | imagine_filter('image_Products') }}" alt="verrine fraicheur" />
             </li>
             <li class="items back-pos" id="3">
-                <img class="picture_product" src="{{ asset('/uploads/pictures_products/3.jpg') | imagine_filter('image_Products') }}"/>
+                <img class="picture_product" src="{{ asset('/uploads/pictures_products/3.jpg') | imagine_filter('image_Products') }}" alt="paté en croute au foie gras"/>
             </li>
             <li class="items back-pos" id="4">
-                <img class="picture_product" src="{{ asset('/uploads/pictures_products/4.jpg') | imagine_filter('image_Products') }}" >
+                <img class="picture_product" src="{{ asset('/uploads/pictures_products/4.jpg') | imagine_filter('image_Products') }}" alt="pavé de cannette" >
             </li>
             <li class="items back-pos" id="5">
-                <img class="picture_product" src="{{ asset('/uploads/pictures_products/5.jpg') | imagine_filter('image_Products') }}" />
+                <img class="picture_product" src="{{ asset('/uploads/pictures_products/5.jpg') | imagine_filter('image_Products') }}" alt="pain surprise" />
             </li>
             <li class="items back-pos" id="6">
-                <img class="picture_product" src="{{ asset('/uploads/pictures_products/6.jpg') | imagine_filter('image_Products') }}" />
+                <img class="picture_product" src="{{ asset('/uploads/pictures_products/6.jpg') | imagine_filter('image_Products') }}" alt="charcuterie" />
             </li>
             <li class="items left-pos" id="7">
-                <img class="picture_product" src="{{ asset('/uploads/pictures_products/7.jpg') | imagine_filter('image_Products') }}" />
+                <img class="picture_product" src="{{ asset('/uploads/pictures_products/7.jpg') | imagine_filter('image_Products') }}" alt="quiche" />
             </li>
         </ul>
         <span>
@@ -68,40 +68,40 @@
         <div class="slider">
 	        <div class="slide-track">
                 <div class="slide">
-                    <img src="{{ asset('/pictures/medailles/Medaille_Benjamin_BBR.png') | imagine_filter('image_medaille') }}"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Benjamin_BBR.png') | imagine_filter('image_medaille') }}" alt="chanmpion de france paté en croute"/>
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('/pictures/medailles/Medaille_Mélissa_BBR.png') | imagine_filter('image_medaille') }}"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Mélissa_BBR.png') | imagine_filter('image_medaille') }}" alt="meilleure ouvriere de france charcutier traiteur"/>
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('/pictures/medailles/Medaille_PÂTÉ_DE_FOIE_Europe_Or.png') | imagine_filter('image_medaille') }}"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_PÂTÉ_DE_FOIE_Europe_Or.png') | imagine_filter('image_medaille') }}" alt="médaille d'or européenne paté de foie"/>
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('/pictures/medailles/Medaille_Jambon_de_paris_2017_Argent_simple.png') | imagine_filter('image_medaille') }}"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Jambon_de_paris_2017_Argent_simple.png') | imagine_filter('image_medaille') }}" alt="médaille d'argent jambon de Paris"/>
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('/pictures/medailles/Medaille_Fromage_de_tête_2018_or.png') | imagine_filter('image_medaille') }}"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Fromage_de_tête_2018_or.png') | imagine_filter('image_medaille') }}" alt="médaille d'or fromage de tête"/>
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('/pictures/medailles/Medaille_Choucroute_2014_argent.png') | imagine_filter('image_medaille') }}"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Choucroute_2014_argent.png') | imagine_filter('image_medaille') }}" alt="médaille d'argent choucroute"/>
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('/pictures/medailles/Medaille_Benjamin_BBR.png') | imagine_filter('image_medaille') }}"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Benjamin_BBR.png') | imagine_filter('image_medaille') }}" alt="chanmpion de france paté en croute"/>
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('/pictures/medailles/Medaille_Mélissa_BBR.png') | imagine_filter('image_medaille') }}"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Mélissa_BBR.png') | imagine_filter('image_medaille') }}" alt="meilleure ouvriere de france charcutier traiteur"/>
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('/pictures/medailles/Medaille_PÂTÉ_DE_FOIE_Europe_Or.png') | imagine_filter('image_medaille') }}"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_PÂTÉ_DE_FOIE_Europe_Or.png') | imagine_filter('image_medaille') }}" alt="médaille d'or européenne paté de foie"/>
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('/pictures/medailles/Medaille_Jambon_de_paris_2017_Argent_simple.png') | imagine_filter('image_medaille') }}"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Jambon_de_paris_2017_Argent_simple.png') | imagine_filter('image_medaille') }}" alt="médaille d'argent jambon de Paris"/>
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('/pictures/medailles/Medaille_Fromage_de_tête_2018_or.png') | imagine_filter('image_medaille') }}"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Fromage_de_tête_2018_or.png') | imagine_filter('image_medaille') }}" alt="médaille d'or fromage de tête"/>
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('/pictures/medailles/Medaille_Choucroute_2014_argent.png') | imagine_filter('image_medaille') }}"/>
+                    <img src="{{ asset('/pictures/medailles/Medaille_Choucroute_2014_argent.png') | imagine_filter('image_medaille') }}" alt="médaille d'argent choucroute"/>
                 </div>
             </div>
         </div>
@@ -110,11 +110,11 @@
 <div >
     <div class="vertical_item_2">
         <div class="separator_vertical_2"></div>
-        <img id="logo_grey_2" src="{{ asset('pictures/logo_gris.jpg') | imagine_filter('logo_grey') }}" alt="">
+        <img id="logo_grey_2" src="{{ asset('pictures/logo_gris.jpg') | imagine_filter('logo_grey') }}" alt="logo maison delaye">
     </div>
     <div id="row_actuality" class="row">
         <div id="container_picture" class="col-lg-6">
-            <img data-aos="fade-right" data-aos-duration="1200" id="picture_melissa_delaye" class="img-fluid" src="{{ asset('/pictures/photo_melissa.jpg') | imagine_filter('image_section_3') }}" alt="">
+            <img data-aos="fade-right" data-aos-duration="1200" id="picture_melissa_delaye" class="img-fluid" src="{{ asset('/pictures/photo_melissa.jpg') | imagine_filter('image_section_3') }}" alt="melissa delaye actualité">
         </div>
         <div id="container_text_actuality" class="col-lg-6">
             <div id="title_actuality">
@@ -132,14 +132,13 @@
                 <span class="main_title jk3">De saison</span>
                 <h2 class="second_title jk4">La carte</h2>
             </div>
-            <p>Découvrez la carte de La « Maison DELAYE » : des recettes traditionnelles emblématiques réinterprétées par nos chefs, pour conjuguer tradition et modernisme de la gastronomie française. La maison s’attache à sourcer des matières premières de qualité, sélectionnées chez nos producteurs pour sublimer l’univers de la charcuterie et des mets traiteur : Jambon Blanc primé, Pâté en croûte Richelieu, Choucroute Garnie, Tournedos de Bœuf aux Morilles, Gâteau de Semoule Traditionnel...
-            De la mise en bouche au dessert, en passant par les plats cuisinés, notre carte est un festival de sens autour de l’art culinaire à la française. 
-            </p>
+            <p>
+            Découvrez la carte de La « Maison DELAYE » : des recettes traditionnelles emblématiques réinterprétées par nos chefs, pour conjuguer tradition et modernisme de la gastronomie française. La maison s’attache à sourcer des matières premières de qualité, sélectionnées chez nos producteurs pour sublimer l’univers de la charcuterie et des mets traiteur. De la mise en bouche au dessert, en passant par les plats cuisinés, notre carte est un festival de sens autour de l’art culinaire à la française.</p>
             <div class="separator_menu"></div>
             <a href="{{ path('card') }}"><button type="button" class="btn btn-light btn_menu">Decouvrir</button></a>
         </div>
         <div class="col-lg-6 container_picture_menu">
-            <img data-aos="fade-left" data-aos-duration="1200" class="img-fluid picture_menu" src="{{ asset('/pictures/photo_menu.jpg') | imagine_filter('image_section_3') }}" alt="">
+            <img data-aos="fade-left" data-aos-duration="1200" class="img-fluid picture_menu" src="{{ asset('/pictures/photo_menu.jpg') | imagine_filter('image_section_3') }}" alt="carte traiteur et charcuterie">
         </div>
     </div>
 </div>

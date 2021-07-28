@@ -1,10 +1,10 @@
 $("#card_main_img").vegas({
     slides: [
+        { src: "/pictures/accueil4.jpg" },
+        { src: "/pictures/accueil5.jpg" },
         { src: "/pictures/accueil1.jpg" },
         { src: "/pictures/accueil2.jpg" },
-        { src: "/pictures/accueil3.jpg" },
-        { src: "/pictures/accueil4.jpg" },
-        { src: "/pictures/accueil5.jpg" }
+        { src: "/pictures/accueil3.jpg" }
     ],
   
     overlay: true,

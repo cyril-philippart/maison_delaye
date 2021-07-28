@@ -16,7 +16,11 @@ h1 {
     color: white;
     font-family: "de-bambeet";  
     letter-spacing: 0.3rem;
-    font-size: 3.2rem;
+    font-size: 3.4rem;
+}
+
+a:hover {
+    color: #022168;
 }
 
 .link_navbar_toggler {
@@ -37,7 +41,7 @@ h1 {
 
 #button_back_top {
     display: inline-block;
-    background-color: #8a6443;
+    background-color: #022168;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -64,11 +68,11 @@ h1 {
 
 #button_back_top:hover {
     cursor: pointer;
-    background-color: #8a644378;
+    background-color: #0221689e;
 }
   
 #button_back_top:active {
-    background-color: #8a644378;
+    background-color: #0221689e;
 }
  
 #button_back_top.show {
@@ -97,7 +101,7 @@ p {
 }
 
 #logoMaisonDelaye {
-    width: 200px;
+    width: 180px;
 }
 
 nav > ul {
@@ -106,28 +110,51 @@ nav > ul {
 }
 
 nav > ul >li {
-    margin-left: 3rem ;
-    font-size: 1.12rem;
+    margin-left: 2rem ;
+    font-size: 1rem;
 }
 
 .link_navbar {
     text-decoration: none;
     color: #022168;
-    transition: color 0.6s ease;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-weight: bold;
 }
 
-.link_navbar:hover {
-    transition: color 0.2s ease;
-    color: #0221689e;
+.menu-item:after {
+    content:'';
+    width: 100%;
+    height: 2px;
+    transform: scale(0,1);
+    transform-origin: left center;
+    background: #022168;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover::after {
+    transform: scale(1);
+    color: #022168;
+}
+
+.menu-item:hover {
+    color: #022168;
 }
 
 .vegas-content-scrollable {
     position: relative;
     height: 100%;
     overflow: hidden;
+}
+
+.down_page {
+    margin-top: 10%;
+}
+
+.down_page > i {
+    font-size: 2rem;
+    color: #022168;
 }
 
 /************************/
@@ -291,6 +318,7 @@ nav > ul >li {
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     font-family: inherit;
+    font-size: 1.8rem;
 }
 
 #second_title {
@@ -513,6 +541,7 @@ section > ul {
 
 #title_medals {
     text-align: center;
+    color: rgba(255, 255, 255, 0.2);
 }
 
 #title_medal {
@@ -521,11 +550,15 @@ section > ul {
     align-items: center;
 }
 
+#title_medal > h2 {
+    color: white;
+}
+
 #container_medal > p{
-    width: 50%;
+    width: 52%;
     margin: 6rem auto;
     text-align: justify;
-    color: #8a6443;
+    color: white;
 }
 
 .main_title {
@@ -657,7 +690,7 @@ section > ul {
 
 .container_text_menu > p{
     width: 75%;
-    margin: 5rem auto;
+    margin: 4rem auto;
     text-align: justify;
 }
 
@@ -670,12 +703,12 @@ section > ul {
 .btn_menu {
     color: #022168 ;
     border-color: #022168;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .jk4 {
     color: #022168;
-    padding-top: 3rem;
+    padding-top: 4rem;
 }
 
 .jk3 {
@@ -1457,11 +1490,11 @@ footer {
     background-image: url(/pictures/photo_devanture.JPG);
     background-size: cover;
     background-position: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 #card_presentation {
-    width: 70%;
+    width: 67%;
     margin: auto;
     align-items: center;
 
@@ -1479,7 +1512,7 @@ footer {
 }
 
 .img_team > img {
-    width: 60%;
+    width: 63%;
 }
 
 #history {
@@ -1543,6 +1576,7 @@ footer {
     letter-spacing: 0.2rem;
     color: #ffffff2b;
     width: 100%;
+    text-align: center !important;
 }
 
 #jk13{
@@ -1620,7 +1654,7 @@ footer {
 #about_porcelet_rose {
     width: 60%;
     margin: auto;
-    text-align: center;
+    text-align: justify;
     margin-bottom: 5rem;
     background-color: #272a4c;
     position: absolute;
@@ -1632,6 +1666,7 @@ footer {
 
 #about_porcelet_rose > p {
     color: white;
+    font-size: 0.9rem;
     padding: 0 4rem;
 }
 
@@ -1645,7 +1680,7 @@ footer {
 }
 
 #jk12 {
-    padding-top: 6rem;
+    padding-top: 4rem;
 }
 /******************************/
 /*                            */
@@ -1838,7 +1873,7 @@ footer {
 /**********************************************************************************************************/
 #background_card {
     height: 350px;
-    background-image: url(/pictures/photo_banniere_carte.jpg);
+    background-image: url(/pictures/banniere_carte.jpg);
     background-size: cover;
     background-position: center;
     margin-bottom: 5rem;
@@ -1861,7 +1896,7 @@ footer {
 }
 
 #overlay_special_card{
-    background-color: rgba(0, 0, 0, 0.600);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 650px;
 }
 
@@ -1967,6 +2002,26 @@ footer {
     margin-top: 3rem;
 }
 
+#service_left {
+    position: absolute;
+    left: 32%;
+    width: 12%;
+    z-index: -1;
+    margin-top: 2rem;
+}
+
+#service_right {
+    position: absolute;
+    right: 32%;
+    width: 12%;
+    z-index: -1;
+    margin-top: 2rem;
+}
+
+#service_center {
+    width: 14%;
+}
+
 /*****************************/
 /*                           */
 /*    Responsive tablette    */
@@ -1998,12 +2053,22 @@ footer {
         margin: 5rem auto;
     }
 
-    .img_service > img {
-        width: 32%;
-    }
-
     .mosaic_img {
         grid-auto-rows: minmax(70px, auto);
+    }
+
+    #service_left {
+        left: 4%;
+        width: 27%;
+    }
+
+    #service_right {
+        right: 4%;
+        width: 27%;
+    }
+
+    #service_center {
+        width: 34%;
     }
 }
 
@@ -2058,8 +2123,9 @@ footer {
     }
 
     .img_service > img {
-        width: 80%;
+        width: 80% !important;
         margin-bottom: 1rem;
+        position: initial !important;
     }
 
     .img_service {
@@ -2079,7 +2145,7 @@ footer {
 
 #background_actuality {
     height: 350px;
-    background-image: url(/pictures/photo_banniere_carte.jpg);
+    background-image: url(/pictures/banierre_actu.jpg);
     background-size: cover;
     background-position: center;
     margin-bottom: 5rem;
@@ -2269,6 +2335,20 @@ footer {
     #logo_grey_2,
     #separator_vertical_contact {
         display: none;
+    }
+
+    #service_right {
+        right: 23%;
+        width: 16%;
+    }
+
+    #service_center {
+        width: 20%;
+    }
+
+    #service_left {
+        left: 23%;
+        width: 16%;
     }
 
     #skill {
@@ -2492,6 +2572,10 @@ footer {
     .vertical_item,
     .vertical_item_2 {
         display: none;
+    }
+
+    #container_main_title {
+        margin-top: 8rem;
     }
 }
 
