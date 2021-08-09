@@ -120,9 +120,17 @@
         <span data-aos="fade-right" data-aos-duration="1200" id="jk13" class="main_title jk3">De l'art</span>
         <h2 id="jk12" class="second_title jk4">Et des actus</h2>
     </div>
-    <div class="instafeed-container">
-        
+    <div id="instafeed-container">
     </div>
-</div>
+</div>   
+ <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    <script type="text/javascript">
+        var userFeed = new Instafeed({
+            target: "instafeed-container",
+            accessToken: 'IGQVJWNmJxUDhLTFo2NG5GMnhkS1RUWTZAuXzdJUlFEU2cwVG9BTVh1eUdmQ2ZAmYTJZAenMtSVF4MllhdHZAUaFUycmxwSXJKMEdCQVc1eDlrX3hSVjJ4OVFVblRkMFFCTTRSUUU5MkFXaTlRVThsekVsUgZDZD',
+            limit: 6
+        });
+        userFeed.run();
+    </script>
 
 {% endblock %}

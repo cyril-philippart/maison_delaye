@@ -11,6 +11,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class MainController extends AbstractController
 {
+    
+
     /**
      * @Route("/", name="homepage")
      */
@@ -74,7 +76,7 @@ class MainController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) 
         {
             $messageFromClient = $form->getData();
-            $message = (new \Swift_Message('Nouveau message'))
+            $message = (new \Swift_Message('Nouveau message depuis le site'))
                 ->setFrom($messageFromClient['mail'])
                 ->setTo('contact@maisondelaye.com')
                 ->setBody(

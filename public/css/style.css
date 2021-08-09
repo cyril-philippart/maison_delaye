@@ -27,6 +27,11 @@ a:hover {
     color: white;
 }
 
+.vertical_item,
+.vertical_item_2 {
+    display: none;
+}
+
 /*********************************************************************************************************/
 /*                                                                                                       */
 /*                                              HOMEPAGE                                                 */
@@ -101,7 +106,7 @@ p {
 }
 
 #logoMaisonDelaye {
-    width: 180px;
+    width: 126px;
 }
 
 nav > ul {
@@ -386,8 +391,6 @@ nav > ul >li {
     color: #02216821;
     letter-spacing: 0.8rem;
     position: absolute;
-    top: -170%;
-    left: 35%;
 }
 
 #work {
@@ -535,8 +538,7 @@ section > ul {
     background-image: url(/pictures/Fond_bleu.jpg);
     margin-top: 8rem;
     margin-bottom: 9rem;
-    background-size: cover;
-    background-position: bottom -500px right 0px;
+    background-position: bottom -470px right 0px;
 }
 
 #title_medals {
@@ -568,14 +570,15 @@ section > ul {
     letter-spacing: 0.8rem;
     position: absolute;
     margin-top: 3rem;
+    
 }
 
 .second_title {
     color: #8a6443;
     letter-spacing: 0.1rem;
     text-transform: uppercase; 
-    padding-top: 4rem;
     font-size: 1.3rem;
+    padding-top: 4rem;
 }
 
 #container_medal {
@@ -756,7 +759,7 @@ section > ul {
 
 #container_contact {
     height: 800px;
-    background-image: url(/pictures/photo_devanture.JPG);
+    background-image: url(/pictures/photo_devanture.jpg);
     background-size: cover;
     margin-top: 10rem;
     text-align: center;
@@ -912,12 +915,18 @@ footer {
         margin-left:  16rem;
     }
 
-    .second_title {
-        padding-top: 0;
+    .second_title,
+    #jk2,
+    .jk4 {
+        padding-top: 7rem;
     }
 
     #container_medal > p {
         margin: 4rem auto 0rem;
+    }
+
+    #container_medal {
+        padding-top: 0rem;
     }
 
     .slider {
@@ -952,10 +961,11 @@ footer {
     #container_picture,
     #container_text_actuality {
         width: 100%;
+        margin-bottom: -2rem;
     }
 
     #container_text_actuality {
-        margin-top: 4rem;
+        margin-top: 0;
         padding-top: 0;
     }
 
@@ -965,9 +975,7 @@ footer {
     }
 
     #jk2 {
-        padding-left: 0;
         font-size: 1.2rem;
-        padding-top: 0;
         color: #022168;
     }
 
@@ -975,13 +983,16 @@ footer {
         width: 100%;
         order: -1;
         text-align:center;
-        margin-bottom: 4rem;
+        margin-bottom: -2rem;
     }
 
     .row_card {
         margin-top: 6rem;
     }
     
+    #container_contact {
+        height: 600px;
+    }
 
     .title_card {
         text-align: center;
@@ -989,18 +1000,25 @@ footer {
 
     .jk4 {
         padding-left: 0rem;
-        padding-top: 1rem;
+    }
+
+    #container_contact_opacity {
+        height: 600px;
     }
 
     .jk5 {
-        margin-top: 7rem;
+        margin-top: 0;
         margin-left: 0rem;
         width: 100%;
         font-size: 5rem;
     }
 
     .jk6 {
-        padding-top: 4rem;
+        padding-top: 1rem;
+    }
+
+    #container_text_contact {
+        margin-top: 4rem;
     }
 
     #main_containter_footer > a > img {
@@ -1154,6 +1172,10 @@ footer {
         padding: 0rem;
     }
 
+    #container_medal {
+        padding-top: 0rem;
+    }
+
     #container_medal > p {
         margin: 4rem auto 3rem;
     }
@@ -1175,12 +1197,28 @@ footer {
     .second_title,
     #jk2,
     .jk4 {
-        padding-top: 0;
+        padding-top: 7rem;
         font-size: 1rem;
     }
 
     .jk4 {
-        padding-top: 0;
+        padding-top: 7rem;
+    }
+
+    #container_text_actuality {
+        margin-top: 0;
+    }
+
+    .container_picture_menu{
+        padding-bottom: 4rem !important;
+    }
+
+    #title_contact_homepage {
+        padding-top: 0rem; 
+    }
+
+    #container_text_contact {
+        margin-top: 4rem;
     }
 
     #container_medal > p,
@@ -1210,7 +1248,7 @@ footer {
     #row_actuality {
         margin-top: 6rem;
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
     }
 
     #container_contact {
@@ -1224,12 +1262,12 @@ footer {
 
     .jk5 {
         margin-top: 3.8rem;
-        font-size: 3rem;
-        letter-spacing: 0.6rem;
+        font-size: 4rem;
+        letter-spacing: 0.4rem;
     }
 
     .jk6 {
-        padding-top: 1rem;
+        padding-top: 8rem;
         padding-left: 0 ;
     }
 
@@ -1263,7 +1301,7 @@ footer {
 /************************************************************************************************************/
 #background_contact {
     height: 350px;
-    background-image: url(/pictures/photo_devanture.JPG);
+    background-image: url(/pictures/photo_devanture.jpg);
     background-size: cover;
     background-position: center;
     margin-bottom: 5rem;
@@ -1476,7 +1514,7 @@ footer {
 
 #background_aboutUs {
     height: 350px;
-    background-image: url(/pictures/photo_devanture.JPG);
+    background-image: url(/pictures/photo_devanture.jpg);
     background-size: cover;
     background-position: center;
     margin-bottom: 2rem;
@@ -1497,7 +1535,7 @@ footer {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-bottom: 6rem;
+    margin-bottom: 9rem;
 }
 
 .img_team > img {
@@ -1582,7 +1620,7 @@ footer {
 
 .slider_comments {
     background-color: #f9f6f3;
-    height: 600px;
+    height: 685px;
 }
 
 .quote {
@@ -1686,15 +1724,15 @@ footer {
     }
 
     #jk9 {
-        top: 56%;
+        top: 57%;
     }
 
     #jk10{
-        padding-top: 1rem;
+        padding-top: 0rem;
     }
 
     #jk12 {
-        padding-top: 4rem;
+        padding-top: 9rem;
     }
 
     .img_team {
@@ -1717,12 +1755,12 @@ footer {
     }
 
     #title_banner_about {
-        margin-bottom: 2rem;
+        margin-bottom: -3rem;
         margin-top: 4rem;
     }
 
     #banner_text {
-        margin-bottom: 1rem;
+        margin-bottom: 6rem;
     }
 
     #slider_comments {
@@ -1770,7 +1808,7 @@ footer {
     
     #jk9 {
         font-size: 3rem;
-        top: 71%;
+        top: 68%;
     }
 
     #jk10 {
@@ -1779,15 +1817,17 @@ footer {
 
     #jk11 {
         font-size: 2rem;
+        margin-top: 0;
     }
 
     #jk12 {
-        padding-top: 3rem;
+        padding-top: 8rem;
     }
 
     #title_banner_about {
         font-size: 1rem;
         margin-top: 3rem;
+        margin-bottom: 2rem;
     }
 
     #banner_text {
@@ -1882,6 +1922,7 @@ footer {
     display: flex;
     justify-content: center;
     padding-top: 4rem;
+    
 }
 
 #overlay_special_card{
@@ -1897,9 +1938,11 @@ footer {
 
 .comming_soon {
     border: 2px solid white;
-    width: 27%;
+    width: 40%;
     padding: 0.5rem 1.5rem;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 #container_places_contact_card {
@@ -1928,7 +1971,7 @@ footer {
 }
 
 #row_command {
-    width: 60%;
+    width: 75%;
     margin: 10rem auto;
 }
 
@@ -2073,6 +2116,9 @@ footer {
         height: 500px;
         margin: 4rem 0;
     }
+    .title_special_card {
+        padding-top: 0;
+    }
 
     .aside_special_card {
         margin: 2rem auto;
@@ -2084,6 +2130,14 @@ footer {
         text-align: justify;
         padding: 0.5rem 0.5rem;
         font-size: 0.9em;
+    }
+
+    #jk21 {
+        margin-top: 1rem;
+    }
+
+    #jk22 {
+        padding-top: 4rem;
     }
 
     .comming_soon {
@@ -2303,6 +2357,21 @@ footer {
     object-fit: scale-down;
 }
 
+#instafeed-container > a > img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#instafeed-container > a  {
+    margin: auto;
+}
+
+#instafeed-container {
+    display: flex;  
+    flex-wrap: wrap;
+}    
+
 /*****************************/
 /*                           */
 /*    Responsive tablette    */
@@ -2312,6 +2381,17 @@ footer {
 @media screen and (max-width : 768px) {
     .actu .text {
         font-size: 12px;
+    }
+
+    #instafeed-container > a > img {
+        width: 234px;
+        height: 234px;
+        margin: 2px;
+    
+    }
+
+    .slider_comments {
+        height: 890px;
     }
 }
 
@@ -2329,6 +2409,21 @@ footer {
 
     #container_all_actuality {
         display: initial;
+    }
+
+    #instafeed-container > a > img {
+        width: 118px !important;
+        height: 118px !important;
+        margin: 2px;
+    
+    }
+
+    .quote {
+        margin-bottom: -2rem;
+    }
+
+    .slider_comments {
+        height: 545px;
     }
 }
 @media (max-width : 1024px) {
@@ -2356,6 +2451,21 @@ footer {
     #logo_grey_2,
     #separator_vertical_contact {
         display: none;
+    }
+
+    #instafeed-container > a > img {
+        width: 313px !important;
+        height: 313px !important;
+        margin: 2px;
+    
+    }
+
+    /* #jk10 {
+        padding-top: 3rem;
+    } */
+
+    .slider_comments {
+        height: 960px;
     }
 
     #service_right {
@@ -2509,6 +2619,10 @@ footer {
         height: 700px;
     }
 
+    #jk22 {
+        margin-top: 2rem !important;
+    }
+
     .jk5 {
         margin-top: 7rem;
         margin-left: 0rem;
@@ -2590,13 +2704,18 @@ footer {
     }
 }
 @media (max-height : 800px) {
-    .vertical_item,
-    .vertical_item_2 {
-        display: none;
-    }
 
     #container_main_title {
         margin-top: 8rem;
+    }
+
+    #instafeed-container > a > img {
+        width: 240px;
+        height: 240px;
+    }
+
+    section {
+        width: 27%;
     }
 }
 
