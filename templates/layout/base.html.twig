@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="La Maison Delaye, charcuterie située rue Houdan à Sceaux, propose des produits charcutiers et des mets traiteurs issus du savoir-faire français. Anciennement baptisé “Au Porcelet Rose”, La Maison Delaye est une véritable institution pour les amateurs de charcuterie : pâté en croûte, saucisson, terrine, fromage de tête, pâté de foie… La Maison Delaye vous propose également un large choix de mets allant de la mise en bouche au dessert en passant par ses incontournables plats cuisinés comme sa traditionnelle choucroute médaillée, son koulibiac de saumon ou encore son gâteau de semoule."/>
+        <meta name="description" content="La Maison Delaye, charcuterie située rue Houdan à Sceaux, propose des produits charcutiers et des mets traiteurs issus du savoir-faire français."/>
         <title>{% block title %}Maison DELAYE{% endblock %}</title>
         {% block stylesheets %}
             <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -13,6 +13,33 @@
             <link href="{{ asset('css/vegas.min.css') }}" rel="stylesheet">
             <link href="{{ asset('css/style.css') }}" rel="stylesheet">
         {% endblock %}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJ8ZSX8JXC"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NJ8ZSX8JXC');
+        </script>
+        <meta name="google-site-verification" content="Y78qGbV4O977NwhVJZik4lG3V2bzmlpklTgen0RZBW4" />
+        <!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
+        <script type="application/ld+json"> 
+        {
+            "@context" : "http://schema.org", 
+            "@type" : "LocalBusiness", 
+            "name" : "Maison DELAYE", 
+            "image" : "https://www.maisondelaye.com/pictures/MD_Maison_Delaye.png", 
+            "telephone" : "01 46 61 01 71", 
+            "email" : "contact@maisondelaye.com", 
+            "address" : 
+            { 
+                "@type" : "PostalAddress",
+                "streetAddress" : "41 rue Houdan",
+                "addressLocality" : "Sceaux",
+                "postalCode" : "92230"
+            } 
+        }
+        </script>
     </head>
     <body>
     <a href="#top" id="button_back_top"></a>
@@ -28,6 +55,7 @@
             </div>
             <div id="legal_mention">
                 <p>© 2021 maisondelaye.com | <a href="{{ path('legalMention') }}">mentions légales</a></p>
+                <p>Design by <a href="https://cynes.fr/">CYNES</a></p>
             </div>
         </div>
     </footer>

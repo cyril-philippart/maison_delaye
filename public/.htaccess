@@ -33,6 +33,9 @@ DirectoryIndex index.php
     RewriteCond %{REQUEST_URI}::$0 ^(/.+)/(.*)::\2$
     RewriteRule .* - [E=BASE:%1]
 
+    RewriteCond %{HTTP_HOST} ^www.maisondelaye\.com [NC]
+    RewriteRule ^(.*)$ http://maisondelaye.com/$1 [L,R=301]
+
     # Sets the HTTP_AUTHORIZATION header removed by Apache
     RewriteCond %{HTTP:Authorization} .+
     RewriteRule ^ - [E=HTTP_AUTHORIZATION:%0]

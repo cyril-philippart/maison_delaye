@@ -814,7 +814,7 @@ section > ul {
 /****************/
 
 footer {
-    height: 330px;
+    height: 370px;
     background-color: black;
     text-align: center;
     margin-top: 5rem;
@@ -1272,7 +1272,7 @@ footer {
     }
 
     footer {
-        height: 243px;
+        height: 290px;
         margin-top: 3rem;
     }
 
@@ -2640,7 +2640,7 @@ footer {
     }
 
     footer {
-        height: 283px;
+        height: 315px;
     }
 
     #card_presentation {
